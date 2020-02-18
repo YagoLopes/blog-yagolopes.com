@@ -7,30 +7,21 @@ export const Styles = styled.header`
   justify-content: space-around;
   align-items: center;
 
-  aside {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 10px;
-    img {
-      height: 50px;
-      width: 50px;
-      padding: 9px;
-    }
-    a {
-      color: ${props => props.theme.colors.secundary};
-      padding: 10px;
-      font-size: 20px;
-    }
+  img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    height: 55%;
+    width: 55%;
   }
 
   nav {
     width: 300px;
-    justify-content: space-between;
     display: flex;
 
     a {
+      margin-left: 10%;
+      font-size: 1em;
       color: #fff;
     }
   }

@@ -1,29 +1,14 @@
 import React from "react"
 import { Styles } from "./styles"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { Link } from "gatsby"
+import logo from "../../assets/logo.png"
 
 const Header = () => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-          pathUrl
-          author
-        }
-      }
-    }
-  `)
-
-  const { title } = data.site.siteMetadata
-
   return (
     <Styles>
-      <aside>
-        <Link to="/" className="title">
-          {title}
-        </Link>
-      </aside>
+      <Link to="/" className="title">
+        <img src={logo} alt="yagolopes.com" />
+      </Link>
       <nav>
         <Link to="/" className="pageTitle">
           Contato
