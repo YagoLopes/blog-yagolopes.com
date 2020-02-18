@@ -1,0 +1,46 @@
+{
+  "name": "blogyagolopes.com",
+  "private": true,
+  "description": "Esse é um blog simples, criado com o intuito de compartilhar informações",
+  "version": "0.1.0",
+  "author": "Yago Lopes",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "deploy": "gh-pages -d public",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.7",
+    "gatsby": "^2.19.7",
+    "gatsby-plugin-styled-components": "^3.1.19",
+    "gatsby-source-filesystem": "^2.1.48",
+    "gatsby-transformer-remark": "^2.6.50",
+    "gh-pages": "^2.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "styled-components": "^5.0.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "keywords": [
+    "yago",
+    "tecnologia",
+    "blog",
+    "programação"
+  ],
+  "homepage": "https://YagoLopes.github.io/gatsby-poc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
