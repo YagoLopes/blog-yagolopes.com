@@ -1,6 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql, Link } from "gatsby"
+import { formatDistanceToNow } from "date-fns"
+import pt from "date-fns/locale/pt"
 export default ({ data }) => (
   <Layout>
     {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -10,10 +12,16 @@ export default ({ data }) => (
             {node.frontmatter.title}
           </Link>
           <div className="list-post-date">
-            <time>{node.frontmatter.date}</time>
+            <time>
+              Publicado há{" "}
+              {formatDistanceToNow(new Date(node.frontmatter.date), {
+                locale: pt,
+              })}{" "}
+              atrás
+            </time>
           </div>
           <div className="list-post-description">
-            <img hei="" src={node.frontmatter.thumbnail} alt="thumbnail" />
+            <img src={node.frontmatter.thumbnail} alt="thumbnail" />
             <p>{node.frontmatter.description}</p>
           </div>
         </div>

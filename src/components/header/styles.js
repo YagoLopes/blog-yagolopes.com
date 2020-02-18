@@ -8,6 +8,7 @@ export const Styles = styled.header`
   align-items: center;
 
   img {
+    padding-left: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
     padding-top: 10px;
