@@ -2,6 +2,7 @@ import React from "react"
 import { Styles } from "./styles"
 import { Link } from "gatsby"
 import logo from "../../assets/logo.png"
+import Menu from "../menu"
 
 const Header = () => {
   return (
@@ -16,6 +17,7 @@ const Header = () => {
         <Link to="/" className="pageTitle">
           Posts
         </Link>
+        <Menu />
       </nav>
     </Styles>
   )
