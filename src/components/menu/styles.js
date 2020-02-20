@@ -1,61 +1,47 @@
 import styled from "styled-components"
 
-export const Styles = styled.div`
-  .menu {
-    background: #fff;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
+export const Styles = styled.nav`
+  width: 300px;
+  display: flex;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    li {
+      float: left;
+      a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      div {
+        display: none;
+        position: absolute;
+        background-color: ${props => props.theme.colors.primary};
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+        a {
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+      }
+    }
   }
 
-  .hamburguer {
-    position: relative;
+  div a:hover {
+    background-color: #f1f1f1;
+    color: #333;
+  }
+
+  li:hover div {
     display: block;
-    background: #000;
-    width: 30px;
-    height: 2px;
-    top: 29px;
-    left: 15px;
-    transition: 0.5s ease-in-out;
-  }
-
-  .hamburguer:before,
-  .hamburguer:after {
-    background: #000;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transition: 0.5s ease-in-out;
-  }
-
-  .hamburguer:before {
-    top: -10px;
-  }
-
-  .hamburguer:after {
-    bottom: -10px;
-  }
-
-  input {
-    display: none;
-  }
-
-  input:checked ~ label .hamburguer {
-    transform: rotate(45deg);
-  }
-
-  input:checked ~ label .hamburguer:before {
-    transform: rotate(90deg);
-    top: 0;
-  }
-
-  input:checked ~ label .hamburguer:after {
-    transform: rotate(90deg);
-    bottom: 0;
   }
 `

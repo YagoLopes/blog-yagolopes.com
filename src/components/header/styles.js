@@ -15,15 +15,4 @@ export const Styles = styled.header`
     height: 55%;
     width: 55%;
   }
-
-  nav {
-    width: 300px;
-    display: flex;
-
-    a {
-      margin-left: 10%;
-      font-size: 1em;
-      color: #fff;
-    }
-  }
 `

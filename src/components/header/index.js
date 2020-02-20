@@ -7,18 +7,10 @@ import Menu from "../menu"
 const Header = () => {
   return (
     <Styles>
-      <Link to="/" className="title">
+      <Link to="/" classNameNameName="title">
         <img src={logo} alt="yagolopes.com" />
       </Link>
-      <nav>
-        <Link to="/" className="pageTitle">
-          Contato
-        </Link>
-        <Link to="/" className="pageTitle">
-          Posts
-        </Link>
-        <Menu />
-      </nav>
+      <Menu />
     </Styles>
   )
 }
