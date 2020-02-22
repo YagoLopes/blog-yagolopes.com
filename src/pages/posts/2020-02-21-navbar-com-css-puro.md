@@ -5,7 +5,8 @@ date: 2020-02-21 22:42
 category: css
 author: Yago Lopes Lázaro
 tags: [css, styles, navbar]
-summary:
+description: "Se você é um desenvolvedor web, com certeza já sofreu para posicionar os elementos html em tela, existem inúmeras técnicas de css que podemos utilizar na estilização das tags html..."
+thumbnail: "https://img.icons8.com/color/48/000000/css3.png"
 ---
 
 Se você é um desenvolvedor web, com certeza já sofreu para posicionar os elementos html em tela, existem inúmeras técnicas de css que podemos utilizar na estilização das tags html.
@@ -16,11 +17,11 @@ Objetivo: construir um barra de navegação responsiva "que se adapte a várias 
 
 #### Web
 
-[exemploWeb](https://github.com/YagoLopes/blog-yagolopes.com/blob/master/.github/web.png)
+![Exemplo Web](https://raw.githubusercontent.com/YagoLopes/blog-yagolopes.com/master/.github/web.png)
 
 #### Mobille
 
-[exemploMobile](https://github.com/YagoLopes/blog-yagolopes.com/blob/master/.github/mobile.png)
+![Exemplo Mobile](https://raw.githubusercontent.com/YagoLopes/blog-yagolopes.com/master/.github/mobile.png)
 
 Primeiro vamos criar dois arquivos para fazer a separação do nosso código: um com o nome de index.html e outro com nome style.css
 
@@ -53,17 +54,17 @@ No arquivo index.html vamos colar o seguinte código:
 
 ```
 
-1. Basicamente utilizaremos uma tag nav que ficará reponsável por fazer toda a parte azul visível no exemplo:
+1.Basicamente utilizaremos uma tag nav que ficará reponsável por fazer toda a parte azul visível no exemplo:
 
-2. Dentro da nave colocaremos uma tag h1 que ficará responsável pelo título
+2.Dentro da nave colocaremos uma tag h1 que ficará responsável pelo título
 
-3. E por último uma tag div que servirá de lista para que possamos colocar os itens da lista representados pela tag strong
+3.E por último uma tag div que servirá de lista para que possamos colocar os itens da lista representados pela tag strong
 
-Bom com isso, se você abrir o arquivo em um navegador web, verá que os elementos já estão lá, porém, de uma forma totalmente desorganizada.
+.Bom com isso, se você abrir o arquivo em um navegador web, verá que os elementos já estão lá, porém, de uma forma totalmente desorganizada.
 
-O que vamos fazer agora é organizar todos os elementos da tela
+.O que vamos fazer agora é organizar todos os elementos da tela
 
-No arquivo styles.css vamos colar o seguinte código:
+.No arquivo styles.css vamos colar o seguinte código:
 
 ```
 * {
@@ -105,28 +106,28 @@ margin-right: 10px;
 }
 ```
 
-1. O caracter `*` pode ser entendido como uma tag que represente todas as outras, o que vamos fazer, é zerar a margem de dentro e de fora de todas tags do html. Essa técnica é conhecida como reset css.
+1.O caracter `*` pode ser entendido como uma tag que represente todas as outras, o que vamos fazer, é zerar a margem de dentro e de fora de todas tags do html. Essa técnica é conhecida como reset css.
 
-2. Na tag body vamos garantir que ela seja 100% da tela e 100% altura da tela, e vamos torná-la uma tag flexível.
+2.Na tag body vamos garantir que ela seja 100% da tela e 100% altura da tela, e vamos torná-la uma tag flexível.
 
-2) Para a tag nav vamos:
+2.Para a tag nav vamos:
 
-- Torná-la flexível
-- Dar a ela, o tamanho referente à largura máxima da tela
-- Definir a cor do texto como branca (#fff),
-- Definir a cor de fundo como azul (royalblue),
-- Justificar o conteúdo de dentro dela ao centro,
+.Torná-la flexível
+.Dar a ela, o tamanho referente à largura máxima da tela
+.Definir a cor do texto como branca (#fff),
+.Definir a cor de fundo como azul (royalblue),
+.Justificar o conteúdo de dentro dela ao centro,
 
-3.  Para o Título poderíamos ter aplicado os estilos na tag h1, porém o css tem uma funcionalidade interessante o nav:first-child, em inglês significa primeiro filho da tag nav ou seja, justamente o nosso h1
+3.Para o Título poderíamos ter aplicado os estilos na tag h1, porém o css tem uma funcionalidade interessante o nav:first-child, em inglês significa primeiro filho da tag nav ou seja, justamente o nosso h1
 
-- Vamos colocar nosso título em negrito
-- E definir uma margem a direita superior e inferior de 10 px
+.Vamos colocar nosso título em negrito
+.E definir uma margem a direita superior e inferior de 10 px
 
-4. Para a lista vamos :
+4.Para a lista vamos :
 
-- torná-la flexível,
-- justificar todo o conteúdo no final da lista, ou seja, à direita
-- alinhar todo o conteúdo no centro da lista
-- para a largura, vamos usar 30% do valor do seu pai (nav) e altura 100% do valor do seu pai (nav)
+.torná-la flexível,
+.justificar todo o conteúdo no final da lista, ou seja, à direita
+.alinhar todo o conteúdo no centro da lista
+.para a largura, vamos usar 30% do valor do seu pai (nav) e altura 100% do valor do seu pai (nav)
 
-5. Por último, vamos colocar uma margem à esquerda nos itens da lista para que, eles não fiquem totalmente grudados
+5.Por último, vamos colocar uma margem à esquerda nos itens da lista para que, eles não fiquem totalmente grudados

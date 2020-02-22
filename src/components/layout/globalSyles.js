@@ -22,6 +22,10 @@ background-color:  ${props => props.theme.colors.background};
 width: 100%;
 height: 100%;
 
+img {
+max-width: 500px;
+max-height: 500px;
+}
 div.container {
 width: 100%;
 margin-left: auto;
@@ -48,10 +52,7 @@ margin-bottom: 40px;
 display: flex;
 align-items: center;
 flex-direction: column;
-img {
-max-width: 50%;
-max-height: 50%;
-}
+
 
 p {
 max-width: 70%;
