@@ -1,0 +1,174 @@
+---
+layout: post
+title: Manipulando Array no Java Script
+date: 2020-02-22 15:30
+category: js
+author: Yago Lopes Lázaro
+tags: [Java Script, Array, Manipulando]
+description: Um array a grosso modo pode ser entendido como uma lista de "elementos", no Java Script um array é simbolizado pelos caracteres de chaves `[]` onde cada elemento é posicionado dentro das chaves e separados por vírgula `,`
+thumbnail: "https://img.icons8.com/color/48/000000/javascript.png"
+---
+
+## Manipulando Array no Java Script
+
+Um array a grosso modo pode ser entendido como uma lista de "elementos", no Java Script um array é simbolizado pelos caracteres de chaves `[]` onde cada elemento é posicionado dentro das chaves e separados por vírgula`,`.
+Para o nosso exemplo vamos utilizar uma lista de usuários, onde cada elemento representará um usuário na lista, e dentro de cada usuário teremos os dados do mesmo como: nome, email, telefone entre outros...
+
+1. Vamos começar criando dois arquivos: um chamado usuarios.js onde ficará a nossa lista de usuários com o seguinte código.
+
+```
+module.exports = [
+  {
+    id: 1,
+    name: "Leanne Graham",
+    username: "Bret",
+    email: "Sincere@april.biz",
+    address: {
+      street: "Kulas Light",
+      suite: "Apt. 556",
+      city: "Gwenborough",
+      zipcode: "92998-3874",
+      geo: {
+        lat: "-37.3159",
+        lng: "81.1496"
+      }
+    },
+    phone: "1-770-736-8031 x56442",
+    website: "hildegard.org",
+    company: {
+      name: "Romaguera-Crona",
+      catchPhrase: "Multi-layered client-server neural-net",
+      bs: "harness real-time e-markets"
+    }
+  },
+  {
+    id: 2,
+    name: "Ervin Howell",
+    username: "Antonette",
+    email: "Shanna@melissa.tv",
+    address: {
+      street: "Victor Plains",
+      suite: "Suite 879",
+      city: "Wisokyburgh",
+      zipcode: "90566-7771",
+      geo: {
+        lat: "-43.9509",
+        lng: "-34.4618"
+      }
+    },
+    phone: "010-692-6593 x09125",
+    website: "anastasia.net",
+    company: {
+      name: "Deckow-Crist",
+      catchPhrase: "Proactive didactic contingency",
+      bs: "synergize scalable supply-chains"
+    }
+  },
+  {
+    id: 3,
+    name: "Clementine Bauch",
+    username: "Samantha",
+    email: "Nathan@yesenia.net",
+    address: {
+      street: "Douglas Extension",
+      suite: "Suite 847",
+      city: "McKenziehaven",
+      zipcode: "59590-4157",
+      geo: {
+        lat: "-68.6102",
+        lng: "-47.0653"
+      }
+    },
+    phone: "1-463-123-4447",
+    website: "ramiro.info",
+    company: {
+      name: "Romaguera-Jacobson",
+      catchPhrase: "Face to face bifurcated interface",
+      bs: "e-enable strategic applications"
+    }
+  }
+];
+```
+
+Basicamente o que fizemos foi criar um módulo no Java Script que exportará a lista de usuários, para que possamos acessá-la de outro arquivo.
+Agora vamos criar mais um arquivo, esse com o nome de index.js, e nele cole o seguinte código.
+
+```
+const usuarios = require("./usuarios");
+
+```
+
+-O código acima faz a importação da lista de usuários presente no outro arquivo
+
+### Objetivos:
+
+1. Encontre um usuário na lista
+2. Remova um usuário da lista
+3. Adicione um usuário na lista
+
+.(Objetivo 1) Para encontrar um usuário na lista basta utilizar a função `find` do Java Script.
+
+```
+const usuario = usuarios.find(usuario => usuario.name === "Clementine Bauch");
+console.log(usuario);
+```
+
+- Criamos uma constante usuário que irá receber o valor retornado pelo find.
+- O find precisa ser aplicado em um array por isso, estamos utilizando ele sobre a lista de usuários.
+- O find irá procurar em todos os usuários presentes na lista, o usuário que tem o nome igual a "Clementine Bauch".
+- Se tiver um usuário com esse nome, ele irá retorná-lo, se não, retornará undefined (indefinido/não existe)
+
+.(Objetivo 2) Para remover um elemento de um array no Java Script utilizamos a função splice.
+
+```
+console.log(usuarios.length);
+usuarios.splice(2, 1);
+console.log(usuarios.length);
+```
+
+O código acima mostra a quantidade de elementos da lista antes e depois de aplicarmos a função splice na lista.
+
+- A função length conta a quantidade de registros da lista
+- O splice remove uma determinada quantidade de registro a partir de uma posição da lista, nesse caso a lista de usuários tem 3 usuários. Vamos remover 1 usuário a partir da posição 2, restando assim apenas 2 usuários, o usuário 1 e o usuário 3.
+
+  . (Objetivo 3) Para inserir um novo usuário na lista, vamos utilizar a função push do Java Script
+
+```
+
+ const usuario = {
+   id: 4,
+   name: "Patricia Lebsack",
+   username: "Karianne",
+   email: "Julianne.OConner@kory.org",
+   address: {
+     street: "Hoeger Mall",
+     suite: "Apt. 692",
+     city: "South Elvis",
+     zipcode: "53919-4257",
+     geo: {
+       lat: "29.4572",
+       lng: "-164.2990"
+     }
+   },
+   phone: "493-170-9623 x156",
+   website: "kale.biz",
+   company: {
+     name: "Robel-Corkery",
+     catchPhrase: "Multi-tiered zero tolerance productivity",
+     bs: "transition cutting-edge web services"
+   }
+ };
+
+```
+
+O código acima cria uma nova constante chamada de usuário, nela colocaremos os mesmos campos que a nossa lista de usuários espera: id, nome, username, email...
+
+```
+ console.log(usuarios.length);
+ usuarios.push(usuario);
+ console.log(usuarios.length);
+
+```
+
+E por fim vamos aplicar a função push na lista de usuários, passando para ela o novo usuário que acabamos de criar.
+Mostraremos a quantidade de registros da lista antes e depois para comprovar que o novo usuário já esta lá.
