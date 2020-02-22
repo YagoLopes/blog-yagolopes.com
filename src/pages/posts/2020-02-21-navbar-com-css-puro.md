@@ -16,11 +16,11 @@ Objetivo: construir um barra de navegação responsiva "que se adapte a várias 
 
 #### Web
 
-[exemploWeb](urlweb)
+[exemploWeb](https://github.com/YagoLopes/blog-yagolopes.com/blob/master/.github/web.png)
 
 #### Mobille
 
-[exemploMobile](urlmobile)
+[exemploMobile](https://github.com/YagoLopes/blog-yagolopes.com/blob/master/.github/mobile.png)
 
 Primeiro vamos criar dois arquivos para fazer a separação do nosso código: um com o nome de index.html e outro com nome style.css
 
