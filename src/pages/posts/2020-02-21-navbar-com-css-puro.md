@@ -27,31 +27,27 @@ Primeiro vamos criar dois arquivos para fazer a separação do nosso código: um
 
 No arquivo index.html vamos colar o seguinte código:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="style.css">
-<title>Document</title>
-</head>
-
-<body>
-<nav>
-<h1>Titulo</h1>
-<div>
-<strong>item1</strong>
-<strong>item2</strong>
-</div>
-
-</nav>
-</body>
-
+  <body>
+    <nav>
+      <h1>Titulo</h1>
+      <div>
+        <strong>item1</strong>
+        <strong>item2</strong>
+      </div>
+    </nav>
+  </body>
 </html>
-
 ```
 
 1.Basicamente utilizaremos uma tag nav que ficará reponsável por fazer toda a parte azul visível no exemplo:
@@ -66,43 +62,43 @@ No arquivo index.html vamos colar o seguinte código:
 
 .No arquivo styles.css vamos colar o seguinte código:
 
-```
+```css
 * {
   margin: 0;
   padding: 0;
-  }
-  body {
+}
+body {
   height: 100%;
   height: 100%;
   display: flex;
-  }
-  nav {
+}
+nav {
   width: 100%;
   color: #fff;
   background-color: royalblue;
 
-justify-content: space-between;
+  justify-content: space-between;
 }
 nav:first-child {
-font-size: 1em;
-font-weight: 500;
-font-family: sans-serif;
-padding-top: 10px;
-padding-bottom: 10px;
-padding-left: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 div {
-display: flex;
-list-style-type: none;
-justify-content: flex-end;
-align-items: center;
-width: 30%;
-height: 100%;
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  align-items: center;
+  width: 30%;
+  height: 100%;
 }
 
 strong {
-margin-right: 10px;
+  margin-right: 10px;
 }
 ```
 
