@@ -15,14 +15,6 @@ A verdade é que não existe errado e nem certo, apenas abordagens diferentes qu
 
 Objetivo: construir um barra de navegação responsiva "que se adapte a várias resoluções de dispositivos", utilizando apenas css puro.
 
-#### Web
-
-![Exemplo Web](https://raw.githubusercontent.com/YagoLopes/blog-yagolopes.com/master/.github/web.png)
-
-#### Mobille
-
-![Exemplo Mobile](https://raw.githubusercontent.com/YagoLopes/blog-yagolopes.com/master/.github/mobile.png)
-
 Primeiro vamos criar dois arquivos para fazer a separação do nosso código: um com o nome de index.html e outro com nome style.css
 
 No arquivo index.html vamos colar o seguinte código:

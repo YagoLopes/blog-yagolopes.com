@@ -4,7 +4,6 @@ export const Styles = styled.header`
   background-color: ${props => props.theme.colors.primary};
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
 
   img {

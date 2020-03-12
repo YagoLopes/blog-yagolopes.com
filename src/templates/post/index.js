@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../../components/layout"
 import { formatDistanceToNow } from "date-fns"
 import pt from "date-fns/locale/pt"
-import { Style } from "./syntax"
+import { Style } from "./styles"
 export default ({ data }) => {
   const post = data.markdownRemark
   const htmlContent = { __html: post.html }
