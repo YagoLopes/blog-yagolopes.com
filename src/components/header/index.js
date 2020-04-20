@@ -9,6 +9,14 @@ const Header = () => {
       <Link to="/" className="title">
         <img src={logo} alt="yagolopes.com" />
       </Link>
+      <nav>
+        <Link to="/contact" className="pageTitle">
+          Contato
+        </Link>
+        <Link to="/home" className="pageTitle">
+          Posts
+        </Link>
+      </nav>
     </Styles>
   )
 }
