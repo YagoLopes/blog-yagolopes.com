@@ -1,37 +1,51 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { formatDistanceToNow } from "date-fns"
-import pt from "date-fns/locale/pt"
 import { Styles } from "./styles"
+import { Helmet } from "react-helmet"
+import GlobalStyles from "../../styles/globalSyles"
+import img from "../../assets/profile.jpg"
 export default ({ data }) => {
-  const post = data.markdownRemark
-  const htmlContent = { __html: post.html }
+ const metaData = data.markdownRemark
 
-  return (
-    <Styles>
-      <article className="content post">
-        <h1 className="post-title">{post.frontmatter.title}</h1>
-        <div className="post-date">
-          <time>
-            {formatDistanceToNow(new Date(post.frontmatter.date), {
-              locale: pt,
-            })}
-          </time>
-        </div>
-        <div dangerouslySetInnerHTML={htmlContent} />
-      </article>
-    </Styles>
-  )
+ return (
+  <>
+   <GlobalStyles />
+   <Styles>
+    <Helmet>
+     <meta charSet="utf-8" />
+     <title>{metaData.frontmatter.title}</title>
+     <link rel="yagolopes.com" href="http://yagolopes.com" />
+    </Helmet>
+    <div>
+     <main>
+      <header>
+       <h1>{metaData.frontmatter.header}</h1>
+       <p>{metaData.frontmatter.description}</p>
+      </header>
+      <section>section</section>
+      <footer>footer</footer>
+     </main>
+     <aside>
+      <section>
+       <img src={img} alt="Yago Lopes" />
+       <span>Yago Lopes</span>
+       <button type="button">Contato</button>
+      </section>
+     </aside>
+    </div>
+   </Styles>
+  </>
+ )
 }
 
 export const query = graphql`
-  query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        title
-        date
-      }
-    }
+ query($slug: String!) {
+  markdownRemark(fields: { slug: { eq: $slug } }) {
+   frontmatter {
+    title
+    header
+    description
+   }
   }
+ }
 `

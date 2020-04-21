@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Manipulando Array no Java Script
+title: Java Script
+header: Manipulando Array no Java Script
 date: 2020-02-22 15:30
 category: js
 author: Yago Lopes Lázaro
@@ -18,75 +19,75 @@ Para o nosso exemplo vamos utilizar uma lista de usuários, onde cada elemento r
 
 ```javascript
 module.exports = [
-  {
-    id: 1,
-    name: "Leanne Graham",
-    username: "Bret",
-    email: "Sincere@april.biz",
-    address: {
-      street: "Kulas Light",
-      suite: "Apt. 556",
-      city: "Gwenborough",
-      zipcode: "92998-3874",
-      geo: {
-        lat: "-37.3159",
-        lng: "81.1496",
-      },
-    },
-    phone: "1-770-736-8031 x56442",
-    website: "hildegard.org",
-    company: {
-      name: "Romaguera-Crona",
-      catchPhrase: "Multi-layered client-server neural-net",
-      bs: "harness real-time e-markets",
-    },
+ {
+  id: 1,
+  name: "Leanne Graham",
+  username: "Bret",
+  email: "Sincere@april.biz",
+  address: {
+   street: "Kulas Light",
+   suite: "Apt. 556",
+   city: "Gwenborough",
+   zipcode: "92998-3874",
+   geo: {
+    lat: "-37.3159",
+    lng: "81.1496",
+   },
   },
-  {
-    id: 2,
-    name: "Ervin Howell",
-    username: "Antonette",
-    email: "Shanna@melissa.tv",
-    address: {
-      street: "Victor Plains",
-      suite: "Suite 879",
-      city: "Wisokyburgh",
-      zipcode: "90566-7771",
-      geo: {
-        lat: "-43.9509",
-        lng: "-34.4618",
-      },
-    },
-    phone: "010-692-6593 x09125",
-    website: "anastasia.net",
-    company: {
-      name: "Deckow-Crist",
-      catchPhrase: "Proactive didactic contingency",
-      bs: "synergize scalable supply-chains",
-    },
+  phone: "1-770-736-8031 x56442",
+  website: "hildegard.org",
+  company: {
+   name: "Romaguera-Crona",
+   catchPhrase: "Multi-layered client-server neural-net",
+   bs: "harness real-time e-markets",
   },
-  {
-    id: 3,
-    name: "Clementine Bauch",
-    username: "Samantha",
-    email: "Nathan@yesenia.net",
-    address: {
-      street: "Douglas Extension",
-      suite: "Suite 847",
-      city: "McKenziehaven",
-      zipcode: "59590-4157",
-      geo: {
-        lat: "-68.6102",
-        lng: "-47.0653",
-      },
-    },
-    phone: "1-463-123-4447",
-    website: "ramiro.info",
-    company: {
-      name: "Romaguera-Jacobson",
-      catchPhrase: "Face to face bifurcated interface",
-      bs: "e-enable strategic applications",
-    },
+ },
+ {
+  id: 2,
+  name: "Ervin Howell",
+  username: "Antonette",
+  email: "Shanna@melissa.tv",
+  address: {
+   street: "Victor Plains",
+   suite: "Suite 879",
+   city: "Wisokyburgh",
+   zipcode: "90566-7771",
+   geo: {
+    lat: "-43.9509",
+    lng: "-34.4618",
+   },
   },
+  phone: "010-692-6593 x09125",
+  website: "anastasia.net",
+  company: {
+   name: "Deckow-Crist",
+   catchPhrase: "Proactive didactic contingency",
+   bs: "synergize scalable supply-chains",
+  },
+ },
+ {
+  id: 3,
+  name: "Clementine Bauch",
+  username: "Samantha",
+  email: "Nathan@yesenia.net",
+  address: {
+   street: "Douglas Extension",
+   suite: "Suite 847",
+   city: "McKenziehaven",
+   zipcode: "59590-4157",
+   geo: {
+    lat: "-68.6102",
+    lng: "-47.0653",
+   },
+  },
+  phone: "1-463-123-4447",
+  website: "ramiro.info",
+  company: {
+   name: "Romaguera-Jacobson",
+   catchPhrase: "Face to face bifurcated interface",
+   bs: "e-enable strategic applications",
+  },
+ },
 ]
 ```
 
@@ -104,7 +105,7 @@ const usuarios = require("./usuarios")
 ##### Encontre um usuário na lista
 
 ```javascript
-const usuario = usuarios.find((usuario) => usuario.name === "Clementine Bauch")
+const usuario = usuarios.find(usuario => usuario.name === "Clementine Bauch")
 ```
 
 .Criamos uma constante usuário que irá receber o valor retornado pelo metodo find.
@@ -123,27 +124,27 @@ usuarios.splice(2, 1)
 
 ```javascript
 const usuario = {
-  id: 4,
-  name: "Patricia Lebsack",
-  username: "Karianne",
-  email: "Julianne.OConner@kory.org",
-  address: {
-    street: "Hoeger Mall",
-    suite: "Apt. 692",
-    city: "South Elvis",
-    zipcode: "53919-4257",
-    geo: {
-      lat: "29.4572",
-      lng: "-164.2990",
-    },
+ id: 4,
+ name: "Patricia Lebsack",
+ username: "Karianne",
+ email: "Julianne.OConner@kory.org",
+ address: {
+  street: "Hoeger Mall",
+  suite: "Apt. 692",
+  city: "South Elvis",
+  zipcode: "53919-4257",
+  geo: {
+   lat: "29.4572",
+   lng: "-164.2990",
   },
-  phone: "493-170-9623 x156",
-  website: "kale.biz",
-  company: {
-    name: "Robel-Corkery",
-    catchPhrase: "Multi-tiered zero tolerance productivity",
-    bs: "transition cutting-edge web services",
-  },
+ },
+ phone: "493-170-9623 x156",
+ website: "kale.biz",
+ company: {
+  name: "Robel-Corkery",
+  catchPhrase: "Multi-tiered zero tolerance productivity",
+  bs: "transition cutting-edge web services",
+ },
 }
 ```
 

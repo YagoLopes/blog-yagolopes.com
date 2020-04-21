@@ -1,57 +1,78 @@
 import styled from "styled-components"
+import img from "../../assets/background.jpeg"
 
 export const Styles = styled.div`
-  div.contact {
+ background-image: url(${img});
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ opacity: 0.9;
+ position: relative;
+ width: 100vw;
+ height: 100vh;
+
+ div {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  main {
+   background-color: #eff1f3;
+   height: 100%;
+   width: 70%;
+
+   header {
+    width: 100%;
+    height: 35%;
+    /* background-color: red; */
+   }
+
+   section {
+    width: 100%;
+    height: 50%;
+    /* background-color: blue; */
+   }
+   footer {
+    height: 15%;
+    width: 100%;
+    /* background-color: green; */
+   }
+  }
+
+  aside {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   width: 30%;
+   section {
     display: flex;
-    widows: 100%;
-    height: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-  }
-
-  div.contact img {
-    max-width: 200px;
-    max-height: 200px;
-    border-radius: 50%;
-  }
-  div.contact p {
-    text-align: center;
-    max-width: 70%;
-  }
-  @media screen and (max-width: 900px) {
-    div.contact p {
-      text-align: center;
-      max-width: 100%;
+    img {
+     width: 145px;
+     height: 150px;
+     border-radius: 50%;
     }
-    div.contact img {
-      max-width: 100px;
-      max-height: 100px;
-      border-radius: 50%;
+    span {
+     font-size: 1.5em;
+     font-weight: 500px;
+     color: #fff;
+     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
-  }
 
-  div.contact ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+    button {
+     border: 0;
+     cursor: pointer;
+     margin-top: 10px;
+     padding: 10px;
+     color: #272727;
+     font-size: 14px;
+     background-color: #fed766;
+     border-radius: 5px;
+    }
+   }
   }
-  div.contact ul li a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  div.contact ul li {
-    margin: 0;
-    padding: 0;
-  }
-
-  div.contact ul li a div {
-    max-width: 50%;
-    max-height: 50%;
-  }
+ }
 `
