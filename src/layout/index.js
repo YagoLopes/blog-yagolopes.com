@@ -1,17 +1,15 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Header from "../header"
-import GlobalStyles from "./globalSyles"
-import { ThemeProvider } from "styled-components"
-import theme from "./theme"
+import GlobalStyles from "../styles/globalSyles"
 
 const Layout = ({ children }) => {
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <GlobalStyles />
       <Header />
       <div className="container">{children}</div>
-    </ThemeProvider>
+    </>
   )
 }
 

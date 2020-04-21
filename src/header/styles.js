@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Styles = styled.header`
-  background-color: ${props => props.theme.colors.primary};
+  background-color: #3d3b3c;
   display: flex;
   flex-direction: row;
   align-items: center;

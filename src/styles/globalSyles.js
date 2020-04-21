@@ -17,8 +17,8 @@ border: 0;
 font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
 font-size: 1rem;
 line-height: 1.6;
-color: ${props => props.theme.colors.text};
-background-color:  ${props => props.theme.colors.background};
+color: #6f7380;
+background-color:  #fff;
 width: 100%;
 height: 100%;
 

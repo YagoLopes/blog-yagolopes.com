@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../../components/layout"
+import Layout from "../../layout"
 import { formatDistanceToNow } from "date-fns"
 import pt from "date-fns/locale/pt"
 import { Style } from "./styles"
