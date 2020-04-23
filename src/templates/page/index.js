@@ -4,6 +4,7 @@ import { Styles } from "./styles"
 import { Helmet } from "react-helmet"
 import GlobalStyles from "../../styles/globalSyles"
 import img from "../../assets/profile.jpg"
+import { FaLinkedinIn } from "react-icons/fa"
 export default ({ data }) => {
  const metaData = data.markdownRemark
 
@@ -19,11 +20,20 @@ export default ({ data }) => {
     <div>
      <main>
       <header>
-       <h1>{metaData.frontmatter.header}</h1>
-       <p>{metaData.frontmatter.description}</p>
+       <h1>{metaData.frontmatter.headerAbout}</h1>
+       <p>{metaData.frontmatter.about}</p>
       </header>
-      <section>section</section>
-      <footer>footer</footer>
+      <section>section..</section>
+      <footer>
+       <h1>{metaData.frontmatter.headerThanks}</h1>
+       <img alt="Feliz" src="https://api.adorable.io/avatars/72" />
+       <p>{metaData.frontmatter.thanks}</p>
+       <nav>
+        <a href="##">
+         <FaLinkedinIn />
+        </a>
+       </nav>
+      </footer>
      </main>
      <aside>
       <section>
@@ -43,8 +53,10 @@ export const query = graphql`
   markdownRemark(fields: { slug: { eq: $slug } }) {
    frontmatter {
     title
-    header
-    description
+    headerAbout
+    about
+    headerThanks
+    thanks
    }
   }
  }
