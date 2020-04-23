@@ -11,6 +11,10 @@ export const Styles = styled.div`
  width: 100vw;
  height: 100vh;
 
+ h1 {
+  color: #31343b;
+ }
+
  div {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -21,22 +25,56 @@ export const Styles = styled.div`
    background-color: #eff1f3;
    height: 100%;
    width: 70%;
+   padding-top: 10px;
+   overflow: auto;
+   display: flex;
+   flex-direction: column;
 
    header {
-    width: 100%;
-    height: 35%;
-    /* background-color: red; */
+    max-width: 90%;
+    margin-left: 20px;
    }
 
    section {
-    width: 100%;
     height: 50%;
-    /* background-color: blue; */
    }
    footer {
-    height: 15%;
-    width: 100%;
-    /* background-color: green; */
+    align-self: center;
+    text-align: center;
+    max-width: 100%;
+    p {
+     margin-left: 10%;
+     margin-right: 10%;
+     margin-bottom: 30px;
+    }
+    img {
+     width: 64px;
+     height: 64px;
+     border-radius: 50%;
+    }
+    nav {
+     background-color: #31343b;
+     width: 100%;
+     margin-bottom: 0;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     a {
+      font-size: 30px;
+      background-color: #0073b1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      color: #fff;
+      width: 50px;
+      height: 50px;
+      border-radius: 20%;
+     }
+    }
    }
   }
 
