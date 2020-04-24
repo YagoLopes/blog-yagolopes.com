@@ -25,26 +25,55 @@ export const Styles = styled.div`
    background-color: #eff1f3;
    height: 100%;
    width: 70%;
-   padding-top: 10px;
    overflow: auto;
    display: flex;
    flex-direction: column;
+   text-align: center;
 
    header {
-    max-width: 90%;
-    margin-left: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
    }
 
    section {
-    height: 50%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+    h1 {
+     text-align: center;
+     margin-bottom: 10px;
+    }
+    img {
+     max-width: 500px;
+     max-height: 500px;
+     border: 1px solid #000;
+     margin-bottom: 10px;
+    }
+
+    section {
+     display: flex;
+     width: 100%;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     margin-bottom: 10px;
+
+     img {
+      margin-bottom: 10px;
+      max-width: 300px;
+      max-height: 300px;
+     }
+    }
    }
    footer {
+    margin-top: 50px;
     align-self: center;
     text-align: center;
-    max-width: 100%;
+    max-width: 70%;
     p {
-     margin-left: 10%;
-     margin-right: 10%;
      margin-bottom: 30px;
     }
     img {
@@ -53,26 +82,15 @@ export const Styles = styled.div`
      border-radius: 50%;
     }
     nav {
-     background-color: #31343b;
-     width: 100%;
-     margin-bottom: 0;
-     padding-top: 30px;
-     padding-bottom: 30px;
+     max-width: 50%;
+     margin-bottom: 20px;
      display: flex;
-     align-items: center;
-     justify-content: center;
-
-     a {
-      font-size: 30px;
-      background-color: #0073b1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px;
-      color: #fff;
-      width: 50px;
-      height: 50px;
-      border-radius: 20%;
+     justify-content: space-around;
+     margin-left: auto;
+     margin-right: auto;
+     img {
+      width: 30px;
+      height: 30px;
      }
     }
    }
