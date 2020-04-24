@@ -51,7 +51,7 @@ export default ({ data }) => {
        </section>
        <p>{metaData.frontmatter.rocketseat}</p>
        <sapn>
-        Todos esses projetos e vários outros você pode ver atravez do link{" "}
+        Todos esses projetos e vários outros você pode ver atravez do link:{" "}
         <a href="https://codesandbox.io/u/YagoLopes/sandboxes">
          https://codesandbox.io/u/YagoLopes/sandboxes
         </a>
