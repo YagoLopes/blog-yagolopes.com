@@ -22,7 +22,7 @@ export default function Home({ data }) {
         {formatDistanceToNow(new Date(node.frontmatter.date), {
          locale: pt,
         })}{" "}
-        atráss
+        atrás
        </time>
       </div>
       <div className="list-post-description">
