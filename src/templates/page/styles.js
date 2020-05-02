@@ -11,6 +11,12 @@ export const Styles = styled.div`
  width: 100vw;
  height: 100vh;
 
+ @media only screen and (max-width: 600px) {
+  flex-direction: column-reverse;
+  width: 100%;
+  height: 100%;
+ }
+
  h1 {
   color: #31343b;
  }
@@ -21,6 +27,10 @@ export const Styles = styled.div`
   height: 100%;
   display: flex;
 
+  @media only screen and (max-width: 600px) {
+   flex-direction: column-reverse;
+  }
+
   main {
    background-color: #eff1f3;
    height: 100%;
@@ -29,6 +39,11 @@ export const Styles = styled.div`
    display: flex;
    flex-direction: column;
    text-align: center;
+
+   @media only screen and (max-width: 600px) {
+    width: 100%;
+    overflow: hidden;
+   }
 
    header {
     width: 70%;
@@ -52,6 +67,11 @@ export const Styles = styled.div`
      max-height: 500px;
      border: 1px solid #000;
      margin-bottom: 10px;
+
+     @media only screen and (max-width: 600px) {
+      max-width: 70%;
+      max-height: 70%;
+     }
     }
 
     section {
@@ -65,6 +85,12 @@ export const Styles = styled.div`
       margin-bottom: 10px;
       max-width: 300px;
       max-height: 300px;
+      @media only screen and (max-width: 600px) {
+       margin-right: 1px;
+       margin-left: 1px;
+       max-width: 40%;
+       max-height: 40%;
+      }
      }
     }
    }
@@ -102,6 +128,13 @@ export const Styles = styled.div`
    align-items: center;
    height: 100%;
    width: 30%;
+   @media only screen and (max-width: 600px) {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+   }
+
    section {
     display: flex;
     flex-direction: column;

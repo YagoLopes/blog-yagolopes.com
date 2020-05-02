@@ -72,16 +72,16 @@ export default ({ data }) => {
        <img alt="Feliz" src="https://api.adorable.io/avatars/72" />
        <p>{metaData.frontmatter.thanks}</p>
        <nav>
-        <a href="##">
+        <a href="https://github.com/YagoLopes">
          <img src={github} alt="Github" />
         </a>
-        <a href="##">
+        <a href="https://br.linkedin.com/in/yago-lopes-l%C3%A1zaro-917536140">
          <img src={linkedin} alt="linkedin" />
         </a>
-        <a href="##">
+        <a href="yagolopeslazaro@gmail.com">
          <img src={gmail} alt="gmail" />
         </a>
-        <a href="##">
+        <a href="https://twitter.com/yagolopeslazaro">
          <img src={twitter} alt="twitter" />
         </a>
        </nav>
