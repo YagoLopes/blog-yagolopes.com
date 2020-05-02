@@ -2,11 +2,6 @@ import styled from "styled-components"
 import img from "../../assets/background.jpeg"
 
 export const Styles = styled.div`
- background-image: url(${img});
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- opacity: 0.9;
  position: relative;
  width: 100vw;
  height: 100vh;
@@ -123,14 +118,19 @@ export const Styles = styled.div`
   }
 
   aside {
+   background-image: url(${img});
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   opacity: 0.9;
    display: flex;
    justify-content: center;
    align-items: center;
    height: 100%;
    width: 30%;
    @media only screen and (max-width: 600px) {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
     width: 100%;
     display: flex;
    }
