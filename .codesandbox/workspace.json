@@ -12,14 +12,6 @@
             "url": "/___graphql",
             "title": "GraphiQL"
           }
-        },
-        {
-          "id": "codesandbox.browser",
-          "options": {
-            "port": 8001,
-            "url": "https://ky142-8001.sse.codesandbox.io"
-          },
-          "closeable": true
         }
       ]
     },

@@ -1,7 +1,7 @@
 {
-  "name": "blogyagolopes.com",
+  "name": "blog-yagolopescom",
   "private": true,
-  "description": "Esse é um blog simples, criado com o intuito de compartilhar informações",
+  "description": "",
   "version": "0.1.0",
   "author": "Yago Lopes",
   "scripts": {
@@ -32,11 +32,6 @@
   "devDependencies": {
     "prettier": "^1.19.1"
   },
-  "keywords": [
-    "yago",
-    "tecnologia",
-    "blog",
-    "programação"
-  ],
+  "keywords": [],
   "homepage": "https://yagolopes.github.io/blog-yagolopes.com"
 }
