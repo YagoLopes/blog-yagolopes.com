@@ -17,6 +17,7 @@ export default function Home({ data }) {
        {node.frontmatter.header}
       </Link>
       <div className="list-post-date">
+       teste
        <time>
         Publicado há{" "}
         {formatDistanceToNow(new Date(node.frontmatter.date), {
