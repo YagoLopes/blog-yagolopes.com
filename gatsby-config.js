@@ -18,14 +18,6 @@ module.exports = {
     plugins: [
      {
       resolve: `gatsby-rehype-prismjs`,
-      options: {
-       divClassNames: "kg-card kg-code-card",
-       classPrefix: "language-",
-       inlineCodeMarker: null,
-       aliases: {},
-       noInlineHighlight: true,
-       escapeEntities: {},
-      },
      },
     ],
    },
