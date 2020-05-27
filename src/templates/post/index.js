@@ -2,9 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../../layout"
 import { Content } from "./styles"
-import { formatDistanceToNow } from "date-fns"
 import { Helmet } from "react-helmet"
-import pt from "date-fns/locale/pt"
 export default ({ data }) => {
  const post = data.markdownRemark
  const htmlContent = { __html: post.html }
@@ -16,16 +14,7 @@ export default ({ data }) => {
     <title>{post.frontmatter.title}</title>
     <link rel={post.frontmatter.title} href={post.fields.slug} />
    </Helmet>
-   <Content>
-    <div>
-     <time>
-      {formatDistanceToNow(new Date(post.frontmatter.date), {
-       locale: pt,
-      })}
-     </time>
-    </div>
-    <div dangerouslySetInnerHTML={htmlContent} />
-   </Content>
+   <Content dangerouslySetInnerHTML={htmlContent} />
   </Layout>
  )
 }
@@ -40,7 +29,6 @@ export const query = graphql`
    frontmatter {
     title
     header
-    date
    }
   }
  }
