@@ -11,26 +11,20 @@ export default function Home({ data }) {
  return (
   <Layout>
    {posts.map(({ node }) => (
-    <div key={node.id} className="content list">
-     <div className="list-item">
-      <Link to={node.fields.slug} className="list-post-title">
-       {node.frontmatter.header}
-      </Link>
-      <div className="list-post-date">
-       <time>
-        Publicado há{" "}
-        {formatDistanceToNow(new Date(node.frontmatter.date), {
-         locale: pt,
-        })}{" "}
-        atrás
-       </time>
-      </div>
-      <div className="list-post-description">
-       <img src={node.frontmatter.thumbnail} alt="thumbnail" />
-       <p>{node.frontmatter.description}</p>
-      </div>
-     </div>
-    </div>
+    <section key={node.id}>
+     <Link to={node.fields.slug}>{node.frontmatter.header}</Link>
+     <time>
+      Publicado há{" "}
+      {formatDistanceToNow(new Date(node.frontmatter.date), {
+       locale: pt,
+      })}{" "}
+      atrás
+     </time>
+     <article>
+      <img src={node.frontmatter.thumbnail} alt="thumbnail" />
+      <p>{node.frontmatter.description}</p>
+     </article>
+    </section>
    ))}
   </Layout>
  )
