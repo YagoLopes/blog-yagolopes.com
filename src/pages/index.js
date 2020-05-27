@@ -11,7 +11,7 @@ export default function Home({ data }) {
  return (
   <Layout>
    {posts.map(({ node }) => (
-    <section key={node.id}>
+    <section key={node.fields.slug}>
      <Link to={node.fields.slug}>{node.frontmatter.header}</Link>
      <time>
       Publicado há{" "}
