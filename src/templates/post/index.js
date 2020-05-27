@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../../layout"
-import { Content } from "./styles"
+import { Content, Footer } from "./styles"
 import { Helmet } from "react-helmet"
 export default ({ data }) => {
  const post = data.markdownRemark
@@ -15,6 +15,7 @@ export default ({ data }) => {
     <link rel={post.frontmatter.title} href={post.fields.slug} />
    </Helmet>
    <Content dangerouslySetInnerHTML={htmlContent} />
+   <Footer />
   </Layout>
  )
 }
