@@ -102,7 +102,7 @@ const usuarios = require("./usuarios")
 
 ### Objetivos:
 
-##### Encontre um usuário na lista
+## Encontre um usuário na lista
 
 ```javascript
 const usuario = usuarios.find(usuario => usuario.name === "Clementine Bauch")
@@ -111,7 +111,7 @@ const usuario = usuarios.find(usuario => usuario.name === "Clementine Bauch")
 .Criamos uma constante usuário que irá receber o valor retornado pelo metodo find.
 .O find irá procurar em toda a lista de usuários, um usuário que tem o nome igual a "Clementine Bauch", se tiver um usuário com esse nome na lista, ele irá retorná-lo, se não, retornará undefined (indefinido/não existe).
 
-#### Para remover um elemento de um array no Java Script utilizamos o metodo splice.
+## Para remover um elemento de um array no Java Script utilizamos o metodo splice.
 
 ```javascript
 usuarios.splice(2, 1)
@@ -120,7 +120,7 @@ usuarios.splice(2, 1)
 .O código acima mostra a quantidade de usuários da lista, depois de aplicarmos o metodo splice.
 .O splice remove uma determinada quantidade de registro a partir de uma posição da lista, nesse caso a lista de usuários tem inicialmente 3 usuários. Vamos remover 1 usuário a partir da posição 2, restando apenas 2 usuários, o usuário 1 e o usuário 3.
 
-#### Para inserir um novo usuário na lista, vamos utilizar o metodo push do Java Script
+## Para inserir um novo usuário na lista, vamos utilizar o metodo push do Java Script
 
 ```javascript
 const usuario = {
