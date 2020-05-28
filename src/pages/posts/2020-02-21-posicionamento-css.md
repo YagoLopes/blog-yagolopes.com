@@ -81,7 +81,7 @@ Se tudo estiver ocorrido bem você já deve ter o esqueleto da pagina montado.
 
 ### Etapa 2 montando barra de navegação
 
-Dentro da tag nav vamos começar a montar nossa barra de navegação, na tag span colocarei a logo da pagina e ao lado uma lista de itens.
+Dentro da tag nav vamos começar a montar nossa barra de navegação, na tag span colocarei a logo da página e ao lado uma lista de itens.
 
 ```html
 <span>Logo</span>
@@ -91,11 +91,11 @@ Dentro da tag nav vamos começar a montar nossa barra de navegação, na tag spa
 </ul>
 ```
 
-Agora vem a parte onde as pessoas mais se confundem... para chegar no objetivo final primeiro é preciso entender a forma que o html trabalha.
+Agora vem a parte onde as pessoas mais se confundem.Para chegarmos no objetivo final primeiro é preciso entender a forma que o html trabalha.
 
-Atualmente temos uma tag span e ao lado uma ul e dentro está os nosso itens. Vamos posicionar a logo a esquerda e a lista a direita.
+Atualmente temos uma tag span e ao lado uma ul e dentro está os nossos itens. Vamos posicionar a logo a esquerda, e a lista a direita.
 
-No comportamento padrão do html, os elementos são posicionados no sentido de colunas, um em baixo do outro e é por isso que a lista está em baixo da logo na tela.
+No comportamento padrão do html, os elementos são posicionados no sentido de colunas, um em baixo do outro e, é por isso que a lista está em baixo da logo na tela.
 
 Para alterar esse comportamento vou utilizar o `display: flex` que altera esse comportamento para em linha para mais detalhes consulte o guia do [Flexbox](https://origamid.com/projetos/flexbox-guia-completo/)
 
@@ -109,7 +109,7 @@ nav {
 }
 ```
 
-Já que compreendemos esse comportamento podemos utilizar a mesma propriedade para colocar os items um do lado do outro.
+Já que compreendemos esse comportamento, podemos utilizar a mesma propriedade para colocar os items um do lado do outro.
 
 ```css
 nav ul {
