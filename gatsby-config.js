@@ -11,24 +11,21 @@ module.exports = {
   },
   `gatsby-plugin-react-helmet`,
   `gatsby-transformer-remark`,
-  `gatsby-plugin-styled-components`,
 
   {
-   resolve: `gatsby-transformer-rehype`,
+   resolve: `gatsby-transformer-remark`,
    options: {
     plugins: [
      {
-      resolve: `gatsby-rehype-prismjs`,
+      resolve: `gatsby-remark-prismjs`,
       options: {
-       divClassNames: "kg-card kg-code-card",
-       classPrefix: "language-",
-       inlineCodeMarker: null,
-       aliases: {},
-       escapeEntities: {},
+       aliases: { sh: "bash", js: "javascript" },
+       showLineNumbers: true,
       },
      },
     ],
    },
   },
+  `gatsby-plugin-styled-components`,
  ],
 }

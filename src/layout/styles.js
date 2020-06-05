@@ -10,6 +10,7 @@ export const Header = styled.header`
  align-items: center;
  justify-content: space-between;
  padding: 10px 155px 10px 10px;
+ z-index: 1000000;
 
  @media screen and (max-width: 900px) {
   flex-direction: column;
