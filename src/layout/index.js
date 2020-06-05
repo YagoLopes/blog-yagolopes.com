@@ -8,7 +8,8 @@ import logo from "../assets/logo.png"
 
 const Layout = ({ children }) => {
  const [posts, setPosts] = useState(children)
- const url = window.location.href.toString()
+ const url =
+  typeof window !== "undefined" ? window.location.href.toString() : ""
 
  function handleChange(value) {
   if (value) {
