@@ -27,5 +27,12 @@ module.exports = {
    },
   },
   `gatsby-plugin-styled-components`,
+  {
+   resolve: `@isamrish/gatsby-plugin-google-adsense`,
+   options: {
+    googleAdClientId: "ca-pub-4768796680688207",
+    head: false,
+   },
+  },
  ],
 }

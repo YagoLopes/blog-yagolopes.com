@@ -15,6 +15,7 @@
   "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
  },
  "dependencies": {
+  "@isamrish/gatsby-plugin-google-adsense": "^1.2.0",
   "babel-plugin-styled-components": "^1.10.7",
   "date-fns": "^2.9.0",
   "gatsby": "^2.19.7",

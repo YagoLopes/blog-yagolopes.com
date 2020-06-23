@@ -51,6 +51,11 @@ const Layout = ({ children }) => {
     )}
    </Header>
    <Main>{posts}</Main>
+   {/* <script
+    data-ad-client="ca-pub-4768796680688207"
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+   ></script> */}
   </>
  )
 }
