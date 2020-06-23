@@ -31,7 +31,6 @@ margin: 0;
 padding: 0;
 border: 0;
 font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
-font-size: 1rem;
 line-height: 1.6;
 color: #6f7380;
 background-color:  #fff;

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Header = styled.header`
- background-color: #3d3b3c;
+ background-color: #f5f5f5;
  display: flex;
  position: fixed;
  top: 0;
@@ -9,32 +9,29 @@ export const Header = styled.header`
  flex-direction: row;
  align-items: center;
  justify-content: space-between;
- padding: 10px 155px 10px 10px;
+ padding: 10px 0;
  z-index: 1000000;
-
- @media screen and (max-width: 900px) {
-  flex-direction: column;
-  padding: 10px;
- }
+ border-bottom: 1px solid #ddd;
 
  img {
-  margin-top: 5px;
-  height: 55px;
+  height: 80px;
+  margin-left: 10%;
  }
  input {
-  float: right;
   padding: 6px;
   margin-top: -2px;
-  border: none;
+  border: solid 1px #6f7380;
+  width: 500px;
   font-size: 17px;
-  border-radius: 10px;
+  border-radius: 4%;
   outline: none;
+  margin-right: 2%;
  }
 `
 
 export const Main = styled.main`
  width: 100%;
- margin-top: 50px;
+ margin-top: 10%;
  margin-left: auto;
  margin-right: auto;
  max-width: 75%;
@@ -45,7 +42,7 @@ export const Main = styled.main`
 
  section {
   border-bottom: solid 1px #e4e4f4;
-  margin-top: 10%;
+  margin-top: 15%;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -57,13 +54,13 @@ export const Main = styled.main`
    }
   }
   article {
-   margin-bottom: 40px;
+   margin-bottom: 15%;
    display: flex;
    align-items: center;
    flex-direction: column;
 
    p {
-    max-width: 70%;
+    max-width: 800px;
     text-align: center;
 
     @media screen and (max-width: 900px) {

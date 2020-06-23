@@ -71,7 +71,7 @@ footer {
 
 Se tudo estiver ocorrido bem você já deve ter o esqueleto da pagina montado.
 
-<img src="https://media.giphy.com/media/Xw6yFn7frR3Y4/giphy.gif" alt="Esqueleto montado">
+<img width="1000" src="https://media.giphy.com/media/61fYIfXvO2EJa/giphy.gif" alt="Esqueleto montado">
 
 ### Etapa 2 montando barra de navegação
 
