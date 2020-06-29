@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../../layout"
 import { Content, Footer } from "./styles"
 import { Helmet } from "react-helmet"
 export default ({ data }) => {
@@ -8,7 +7,7 @@ export default ({ data }) => {
  const htmlContent = { __html: post.html }
 
  return (
-  <Layout>
+  <>
    <Helmet>
     <meta charSet="utf-8" />
     <title>{post.frontmatter.title}</title>
@@ -16,7 +15,7 @@ export default ({ data }) => {
    </Helmet>
    <Content dangerouslySetInnerHTML={htmlContent} />
    <Footer />
-  </Layout>
+  </>
  )
 }
 

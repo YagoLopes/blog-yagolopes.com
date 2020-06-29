@@ -2,38 +2,49 @@ import { createGlobalStyle } from "styled-components"
 
 export default createGlobalStyle`
 * {
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
 box-sizing: border-box;
-list-style-type: none;
-text-decoration: none;
 margin: 0;
 padding: 0;
 }
 
-.gatsby-highlight {
-  background-color: #1d1f21;
-  border-radius: 0.3em;
-  margin: 0.5em 0;
-  padding: 1em;
-  overflow: auto;
+html, body, #root{
+  height: 100%
 }
 
-.gatsby-highlight pre[class*="language-"].line-numbers {
-  padding: 0;
-  padding-left: 2.8em;
-  overflow: initial;
-}
 
-html,
-body {
+*, button, input{
 margin: 0;
 padding: 0;
 border: 0;
-font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
-line-height: 1.6;
-color: #6f7380;
-background-color:  #fff;
+font-family: 'Roboto', sans-serif;
 }
+
+
+:root {
+    --primary: #36393f;
+    --secondary: #2f3136;
+    --tertiary: rgb(32,34,37);
+    --quaternary: #292b2f;
+    --quinary: #393d42;
+    --senary: #828386;
+   
+    --white: #fff;
+    --gray: #8a8c90;
+    --chat-input: rgb(64,68,75);
+    --symbol: #74777a;
+ 
+    --notification: #f84a4b;
+    --discord: #6e86d6;
+    --mention-detail: #f9a839;
+    --mention-message: #413f3f;
+ 
+    --link: #5d80d6;
+ 
+    --rocketseat: #6633cc;
+  }
+
+
+
+
 
 `

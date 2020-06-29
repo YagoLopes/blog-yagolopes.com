@@ -1,32 +1,26 @@
 import React from "react"
-import Layout from "../layout"
-import { graphql, Link } from "gatsby"
-import { formatDistanceToNow } from "date-fns"
-import pt from "date-fns/locale/pt"
-export default function Home({ data }) {
+import GlobalSyles from "../styles/globalSyles"
+import { Helmet } from "react-helmet"
+import Home from "../components/Home"
+import PostContextProvider from "../context/PostContext"
+import { graphql } from "gatsby"
+
+export default function({ data }) {
  const posts = data.allMarkdownRemark.edges.filter(
   ({ node }) => node.frontmatter.layout === "post"
  )
-
  return (
-  <Layout>
-   {posts.map(({ node }) => (
-    <section key={node.fields.slug}>
-     <Link to={node.fields.slug}>{node.frontmatter.header}</Link>
-     <time>
-      Publicado há{" "}
-      {formatDistanceToNow(new Date(node.frontmatter.date), {
-       locale: pt,
-      })}{" "}
-      atrás
-     </time>
-     <article>
-      <img src={node.frontmatter.thumbnail} alt="thumbnail" />
-      <p>{node.frontmatter.description}</p>
-     </article>
-    </section>
-   ))}
-  </Layout>
+  <>
+   <GlobalSyles />
+   <Helmet>
+    <meta charSet="utf-8" />
+    <title>yagolopes.com</title>
+    <link rel="yagolopes.com" href="http://yagolopes.com" />
+   </Helmet>
+   <PostContextProvider payload={posts}>
+    <Home />
+   </PostContextProvider>
+  </>
  )
 }
 
