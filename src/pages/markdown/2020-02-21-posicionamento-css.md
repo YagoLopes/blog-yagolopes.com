@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CSS 3
-header: Posicionando elementos em tela com CSS3
+header: Posicionando com CSS3
 date: 2020-05-27 22:42
 category: css
 author: Yago Lopes Lázaro

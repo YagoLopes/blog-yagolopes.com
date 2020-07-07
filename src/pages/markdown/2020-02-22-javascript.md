@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Java Script
-header: Manipulando Array no Java Script
+header: Array no Java Script
 date: 2020-02-22 15:30
 category: js
 author: Yago Lopes Lázaro

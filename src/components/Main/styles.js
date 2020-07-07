@@ -19,10 +19,22 @@ export const Container = styled.main`
   background-color: var(--secondary);
  }
 `
+export const DateInfo = styled.span`
+ margin-top: 10px;
+ color: var(--white);
+ padding: 2px;
+ font-weight: bold;
+ background-color: var(--notification);
+ border-radius: 4px;
+ font-size: 11px;
+`
+
 export const Post = styled(Link)`
- height: 500px;
+ min-height: 280px;
+ max-width: 270px;
  text-decoration: none;
- margin-top: 5px;
+ border: 1px solid var(--notification);
+ margin: 5px;
  padding: 5px;
  display: flex;
  flex-direction: column;
@@ -34,31 +46,28 @@ export const Post = styled(Link)`
  &:hover {
   background: rgba(255, 255, 255, 0.1);
  }
+
  strong {
-  margin-left: 13px;
+  margin-top: 5px;
   font-weight: 500;
   color: var(--white);
-  opacity: 0.7;
-  white-space: nowrap;
   text-overflow: ellipsis;
-  overflow: hidden;
  }
- span {
-  margin-left: 9px;
-  background-color: var(--discord);
+
+ p {
+  margin-top: 5px;
+  opacity: 0.7;
+  font-size: 14px;
+  text-align: center;
   color: var(--white);
-  border-radius: 4px;
-  padding: 4px 5px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 11px;
  }
 `
 
 export const Avatar = styled.div`
  flex-shrink: 0;
- width: 32px;
- height: 32px;
+ padding: 10px;
+ width: 45px;
+ height: 45px;
  border-radius: 50%;
  background-color: var(--primary);
 

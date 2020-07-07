@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 export const Container = styled.div`
  margin-top: 15px;
  width: 90%;
- padding: 3px 6px 10px 16px;
+ padding: 5%;
  background-color: var(--secondary);
  overflow-y: scroll;
  ::-webkit-scrollbar {
@@ -33,7 +33,7 @@ export const PostRow = styled(Link)`
   background: rgba(255, 255, 255, 0.1);
  }
  strong {
-  margin-left: 13px;
+  margin-left: 10px;
   font-weight: 500;
   color: var(--white);
   opacity: 0.7;
@@ -43,7 +43,7 @@ export const PostRow = styled(Link)`
  }
  span {
   margin-left: 9px;
-  background-color: var(--discord);
+  background-color: var(--notification);
   border-radius: 50%;
   padding: 4px 5px;
  }
