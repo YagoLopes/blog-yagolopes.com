@@ -6,7 +6,6 @@ export const Container = styled.main`
  background-color: var(--secondary);
  display: flex;
  flex-wrap: wrap;
-
  overflow-y: scroll;
  ::-webkit-scrollbar {
   width: 7px;

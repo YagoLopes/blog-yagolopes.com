@@ -10,7 +10,7 @@ description: Um array a grosso modo pode ser entendido como uma lista de "elemen
 thumbnail: "https://img.icons8.com/color/48/000000/javascript.png"
 ---
 
-## Manipulando Array no Java Script
+# Manipulando Array no Java Script
 
 Um array a grosso modo pode ser entendido como uma lista de "elementos", no Java Script um array é simbolizado pelos caracteres de chaves `[ ]` onde cada elemento é posicionado dentro das chaves, e separados por vírgula`,`.
 Para o nosso exemplo vamos utilizar uma lista de usuários, onde cada elemento representará um usuário na lista, e dentro de cada usuário teremos os dados do mesmo como: nome, email, telefone entre outros...

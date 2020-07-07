@@ -10,7 +10,9 @@ description: "Se você é um desenvolvedor web, com certeza já sofreu para posi
 thumbnail: "https://img.icons8.com/color/48/000000/css3.png"
 ---
 
-# Antes de começarmos
+# Posicionando com CSS3
+
+## Antes de começarmos
 
 Para executar os exemplos abaixo na sua maquina, você irá precisar de um editor de texto, e um navegador web.
 
