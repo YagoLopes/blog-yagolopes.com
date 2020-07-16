@@ -15,7 +15,7 @@ thumbnail: "https://img.icons8.com/color/48/000000/javascript.png"
 Um array a grosso modo pode ser entendido como uma lista de "elementos", no Java Script um array é simbolizado pelos caracteres de chaves `[ ]` onde cada elemento é posicionado dentro das chaves, e separados por vírgula`,`.
 Para o nosso exemplo vamos utilizar uma lista de usuários, onde cada elemento representará um usuário na lista, e dentro de cada usuário teremos os dados do mesmo como: nome, email, telefone entre outros...
 
-#### Vamos começar criando dois arquivos: um chamado usuarios.js onde ficará a nossa lista de usuários com o seguinte código.
+### Vamos começar criando dois arquivos: um chamado usuarios.js onde ficará a nossa lista de usuários com o seguinte código.
 
 ```javascript
 module.exports = [
@@ -91,16 +91,14 @@ module.exports = [
 ]
 ```
 
-.Basicamente o que fizemos foi criar um módulo no Java Script, que exportará a lista de usuários, para que possamos acessá-la de outro arquivo.
+Basicamente o que fizemos foi criar um módulo no Java Script, que exportará a lista de usuários, para que possamos acessá-la de outro arquivo.
 .Agora vamos criar mais um arquivo, esse com o nome de index.js, e nele cole o seguinte código.
 
 ```javascript
 const usuarios = require("./usuarios")
 ```
 
-.O código acima faz a importação da lista de usuários que acabamos de criar.
-
-### Objetivos:
+O código acima faz a importação da lista de usuários que acabamos de criar.
 
 ## Encontre um usuário na lista
 
@@ -108,8 +106,8 @@ const usuarios = require("./usuarios")
 const usuario = usuarios.find(usuario => usuario.name === "Clementine Bauch")
 ```
 
-.Criamos uma constante usuário que irá receber o valor retornado pelo metodo find.
-.O find irá procurar em toda a lista de usuários, um usuário que tem o nome igual a "Clementine Bauch", se tiver um usuário com esse nome na lista, ele irá retorná-lo, se não, retornará undefined (indefinido/não existe).
+Criamos uma constante usuário que irá receber o valor retornado pelo metodo find.
+O find irá procurar em toda a lista de usuários, um usuário que tem o nome igual a "Clementine Bauch", se tiver um usuário com esse nome na lista, ele irá retorná-lo, se não, retornará undefined (indefinido/não existe).
 
 ## Para remover um elemento de um array no Java Script utilizamos o metodo splice.
 
@@ -117,8 +115,8 @@ const usuario = usuarios.find(usuario => usuario.name === "Clementine Bauch")
 usuarios.splice(2, 1)
 ```
 
-.O código acima mostra a quantidade de usuários da lista, depois de aplicarmos o metodo splice.
-.O splice remove uma determinada quantidade de registro a partir de uma posição da lista, nesse caso a lista de usuários tem inicialmente 3 usuários. Vamos remover 1 usuário a partir da posição 2, restando apenas 2 usuários, o usuário 1 e o usuário 3.
+O código acima mostra a quantidade de usuários da lista, depois de aplicarmos o metodo splice.
+O splice remove uma determinada quantidade de registro a partir de uma posição da lista, nesse caso a lista de usuários tem inicialmente 3 usuários. Vamos remover 1 usuário a partir da posição 2, restando apenas 2 usuários, o usuário 1 e o usuário 3.
 
 ## Para inserir um novo usuário na lista, vamos utilizar o metodo push do Java Script
 
@@ -148,7 +146,7 @@ const usuario = {
 }
 ```
 
-.O código acima cria uma nova constante chamada de usuário, nela colocaremos os mesmos campos que a nossa lista de usuários espera: id, nome, username, email...
+O código acima cria uma nova constante chamada de usuário, nela colocaremos os mesmos campos que a nossa lista de usuários espera: id, nome, username, email...
 
 ```javascript
 usuarios.push(usuario)

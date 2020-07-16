@@ -12,11 +12,7 @@ thumbnail: "https://img.icons8.com/color/48/000000/css3.png"
 
 # Posicionando com CSS3
 
-## Antes de começarmos
-
-Para executar os exemplos abaixo na sua maquina, você irá precisar de um editor de texto, e um navegador web.
-
-### Etapa 1 definindo layout
+### Definindo layout
 
 A grande maioria dos sites da web possui uma estrutura simples: uma barra de navegação, uma seção de conteudo e um rodapé. Vamos utilizar um pouco de [flexbox](https://origamid.com/projetos/flexbox-guia-completo/) para montar esse layout. Para o html vamos utilizar as seguintes tags
 
@@ -28,7 +24,7 @@ A grande maioria dos sites da web possui uma estrutura simples: uma barra de nav
 </body>
 ```
 
-No css vamos começar com um reset css simples
+Vamos começar com um reset css simples. O reset css serve para remover algumas propriedades padrões dos navegadores, tornando o a renderização da página semelhante em todos eles.
 
 ```css
 * {
@@ -38,7 +34,8 @@ No css vamos começar com um reset css simples
 }
 ```
 
-Assumirei que a nossa aplicação usará toda a área disponível em tela, e por isso vamos utilizar a largura e altura com 100% da tela. Torne o display flexível para que possamos trabalhar com os conceitos do flaxbox nos elementos flihos da tag body. E por ultimo vamos mudar a direção para colunas para colocar os elemntos filhos do body um em baixo do outro.
+Assumirei que a nossa aplicação usará toda a área disponível em tela, e por isso vamos utilizar toda a largura e altura disponível.
+Aproveitando tambem para mudar o a propriedade display para `flex`, para que possamos utilizar as técnicas do flex box. E por ultimo vamos mudar a direção para colunas para colocar os elemntos filhos do body um em baixo do outro.
 
 ```css
 html,
@@ -71,7 +68,7 @@ footer {
 }
 ```
 
-Se tudo estiver ocorrido bem você já deve ter o esqueleto da pagina montado.
+## Se tudo estiver ocorrido bem você já deve ter o esqueleto da página montado.
 
 <img width="1000" src="https://media.giphy.com/media/61fYIfXvO2EJa/giphy.gif" alt="Esqueleto montado">
 

@@ -20,10 +20,9 @@ export const Container = styled.main`
 `
 export const DateInfo = styled.span`
  margin-top: 10px;
- color: var(--white);
+ color: var(--discord);
  padding: 2px;
  font-weight: bold;
- background-color: var(--notification);
  border-radius: 4px;
  font-size: 11px;
 `
@@ -32,7 +31,7 @@ export const Post = styled(Link)`
  min-height: 280px;
  max-width: 270px;
  text-decoration: none;
- border: 1px solid var(--notification);
+ border: 1px solid var(--discord);
  margin: 5px;
  padding: 5px;
  display: flex;
@@ -69,10 +68,6 @@ export const Avatar = styled.div`
  height: 45px;
  border-radius: 50%;
  background-color: var(--primary);
-
- &.bot {
-  background-color: var(--mention-detail);
- }
 
  img {
   width: 100%;

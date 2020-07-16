@@ -8,7 +8,6 @@ function PostList() {
   <Container>
    {posts.map(({ node }) => (
     <PostRow to={node.fields.slug}>
-     <span />
      <strong>{node.frontmatter.header}</strong>
     </PostRow>
    ))}

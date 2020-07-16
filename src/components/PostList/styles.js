@@ -5,7 +5,6 @@ export const Container = styled.div`
  margin-top: 15px;
  width: 90%;
  padding: 5%;
- background-color: var(--secondary);
  overflow-y: scroll;
  ::-webkit-scrollbar {
   width: 4px;
@@ -40,11 +39,5 @@ export const PostRow = styled(Link)`
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
- }
- span {
-  margin-left: 9px;
-  background-color: var(--notification);
-  border-radius: 50%;
-  padding: 4px 5px;
  }
 `
