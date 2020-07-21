@@ -28,6 +28,7 @@ export const Title = styled.h2`
  color: var(--quinary);
 `
 export const Text = styled.p`
+ margin-top: 10px;
  color: var(--tertiary);
  opacity: 0.7;
 `
