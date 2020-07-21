@@ -3,6 +3,7 @@ import GlobalSyles, { Container } from "../styles/portfolioSyles"
 import Header from "../components/Portfolio/Header"
 import { Helmet } from "react-helmet"
 import ListProjects from "../components/Portfolio/ListProjects"
+import EmailForm from "../components/Portfolio/EmailForm"
 
 export default function() {
  return (
@@ -16,6 +17,7 @@ export default function() {
    <Container>
     <Header />
     <ListProjects />
+    <EmailForm />
    </Container>
   </React.Fragment>
  )

@@ -13,7 +13,6 @@ export const Project = styled.div`
  flex-direction: column;
  border: solid 1px var(--primary);
  border-radius: 4px;
- margin-left: 50px;
  margin-bottom: 50px;
  padding: 10px;
  min-width: 100px;
