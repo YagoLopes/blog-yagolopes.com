@@ -21,19 +21,16 @@ export const Right = styled.div`
  height: 350px;
  background-image: url(${img});
  background-color: var(--quaternary);
- border-radius: 50%;
+ border-radius: 10%;
  background-repeat: no-repeat;
- opacity: 0.1;
+ -moz-box-shadow: inset 10px 10px 50px var(--quaternary);
+ -webkit-box-shadow: inset 10px 10px 50px var(--quaternary);
+ box-shadow: inset 30px 30px 50px var(--quaternary);
+ opacity: 0.2;
  background-size: cover;
 
  @media only screen and (max-width: 600px) {
   position: absolute;
-  -moz-box-shadow: 10px 10px 5px #000;
-  -webkit-box-shadow: 10px 10px 5px #000;
-  box-shadow: 10px 10px 5px #000;
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
-  border-radius: 25px;
  }
 `
 export const Title = styled.h2`
