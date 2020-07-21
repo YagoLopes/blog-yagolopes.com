@@ -15,19 +15,19 @@ export const Right = styled.div`
  margin-left: 50px;
  width: 350px;
  height: 350px;
- background-image: url(${img}); /* The image used */
- background-color: var(--quaternary); /* Used if the image is unavailable */
-
+ background-image: url(${img});
+ background-color: var(--quaternary);
  border-radius: 50%;
- /*background-position: top; /* Center the image */
- background-repeat: no-repeat; /* Do not repeat the image */
+ background-repeat: no-repeat;
  opacity: 0.1;
  background-size: cover;
 `
 export const Title = styled.h2`
+ font-size: 1.8em;
  color: var(--quinary);
 `
 export const Text = styled.p`
+ font-size: 1.2em;
  margin-top: 10px;
  color: var(--tertiary);
  opacity: 0.7;

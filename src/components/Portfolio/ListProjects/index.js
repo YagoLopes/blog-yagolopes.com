@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Project } from "./styles"
-import projects from "../../../data/projects"
+import { projects } from "../../../data/projects"
 
 function ListProjects() {
  return (

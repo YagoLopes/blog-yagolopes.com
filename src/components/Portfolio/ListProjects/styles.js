@@ -46,6 +46,7 @@ export const Project = styled.div`
   color: var(--tertiary);
   font-weight: 800;
   opacity: 0.9;
+  cursor: pointer;
   :hover {
    background-color: var(--quinary);
    color: var(--secondary);
