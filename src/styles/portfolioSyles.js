@@ -1,0 +1,43 @@
+import { createGlobalStyle } from "styled-components"
+import styled from "styled-components"
+
+export default createGlobalStyle`
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html, body, #root{
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+*, button, input{
+margin: 0;
+padding: 0;
+border: 0;
+font-family: 'Roboto', sans-serif;
+}
+
+
+:root {
+    --primary: #FFBD14;
+    --secondary: #262327;
+    --tertiary: #FCFCF2;
+    --quaternary: #1C1714;
+    --quinary: #FD951F;
+    --senary: #fcfcf2;
+    --sectarian:#ff8928;
+    --octanary: #d10000;
+
+    --white: #fcfcf2;
+    --link: #00638a;
+  }
+`
+
+export const Container = styled.div`
+ width: 100vw;
+ background-color: var(--secondary);
+`

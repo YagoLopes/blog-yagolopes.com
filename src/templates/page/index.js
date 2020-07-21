@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Styles } from "./styles"
 import { Helmet } from "react-helmet"
-import GlobalStyles from "../../styles/globalSyles"
 import img from "../../assets/profile.jpg"
 import github from "../../assets/github.svg"
 import linkedin from "../../assets/linkedin.svg"
@@ -20,7 +19,6 @@ export default ({ data }) => {
 
  return (
   <>
-   <GlobalStyles />
    <Styles>
     <Helmet>
      <meta charSet="utf-8" />

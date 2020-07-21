@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Content } from "./styles"
 import { Helmet } from "react-helmet"
-import GlobalSyles from "../../styles/globalSyles"
+import GlobalSyles from "../../styles/blogSyles"
 export default ({ data }) => {
  const post = data.markdownRemark
  const htmlContent = { __html: post.html }
