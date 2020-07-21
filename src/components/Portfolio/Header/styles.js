@@ -28,6 +28,12 @@ export const Right = styled.div`
 
  @media only screen and (max-width: 600px) {
   position: absolute;
+  -moz-box-shadow: 10px 10px 5px #000;
+  -webkit-box-shadow: 10px 10px 5px #000;
+  box-shadow: 10px 10px 5px #000;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
  }
 `
 export const Title = styled.h2`
