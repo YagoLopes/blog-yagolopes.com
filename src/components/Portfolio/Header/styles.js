@@ -9,6 +9,10 @@ export const Container = styled.div`
 
 export const Left = styled.div`
  max-width: 50%;
+
+ @media only screen and (max-width: 600px) {
+  max-width: 100%;
+ }
 `
 export const Right = styled.div`
  margin-top: -8%;
@@ -21,6 +25,10 @@ export const Right = styled.div`
  background-repeat: no-repeat;
  opacity: 0.1;
  background-size: cover;
+
+ @media only screen and (max-width: 600px) {
+  position: absolute;
+ }
 `
 export const Title = styled.h2`
  font-size: 1.8em;
