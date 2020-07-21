@@ -35,7 +35,7 @@ export const Project = styled.div`
   opacity: 0.5;
  }
 
- button {
+ a {
   margin-top: 15px;
   width: 100px;
   height: 30px;
@@ -47,6 +47,11 @@ export const Project = styled.div`
   font-weight: 800;
   opacity: 0.9;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  text-decoration: none;
   :hover {
    background-color: var(--quinary);
    color: var(--secondary);

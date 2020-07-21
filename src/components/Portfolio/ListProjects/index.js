@@ -9,7 +9,7 @@ function ListProjects() {
     <Project key={project.id}>
      <header>{project.name}</header>
      <span>{project.description}</span>
-     <button>Saiba mais</button>
+     <a href={project.url}>Saiba mais</a>
     </Project>
    ))}
   </Container>
