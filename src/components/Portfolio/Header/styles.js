@@ -11,6 +11,7 @@ export const Left = styled.div`
  max-width: 50%;
 
  @media only screen and (max-width: 600px) {
+  margin-top: 20px;
   max-width: 100%;
  }
 `
