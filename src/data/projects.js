@@ -41,8 +41,7 @@ module.exports = {
  ],
 
  profile: {
-  title:
-   "Yago Lopes é Análise de sistemas. Dev Full Stack, e apaixonado pelo que faz!",
+  title: "Yago Lopes é Analista de sistemas, e apaixonado pelo que faz!",
   description:
    "Yago Lopes é formado em Análise e Desenvolvimento de Sistemas. Desenvolvedor Web Fullstack JavaScript com Node.js, e nas horas vagas, autor e redator do blog yagolopes.com",
  },
