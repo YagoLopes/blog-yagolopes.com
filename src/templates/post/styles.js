@@ -1,48 +1,62 @@
 import styled from "styled-components"
+import { Container as GlobalContainer } from "../../styles/globalSyles"
+export const Container = styled(GlobalContainer)`
+ padding-top: 15px;
+`
+
 export const Content = styled.div`
- display: flex;
- width: 100%;
- height: 100%;
- flex-direction: column;
- background-color: var(--primary);
- margin-top: 5px;
- font-size: 14px;
- padding: 0 10%;
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%;
+ min-width: 500px;
 
- h1,
- h2,
- h3,
- h4,
- h5 {
-  margin-top: 5px;
-  font-weight: 500;
-  color: var(--white);
-  text-overflow: ellipsis;
- }
+ border-radius: 8px;
+ border: 1px solid rgba(0, 0, 0, 0.3);
+ background-color: rgba(0, 0, 0, 0.1);
 
- h1 {
-  text-align: center;
-  font-size: 2.3em;
- }
+ color: var(--white);
 
- img {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  align-self: center;
-
-  max-width: 200px;
-  max-width: 300px;
- }
-
- p {
-  color: var(--white);
-  opacity: 0.7;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  line-height: 1.5;
- }
+ margin-bottom: 12px;
+ padding: 24px;
+ padding-top: 22px;
+ position: relative;
 
  a {
   color: var(--link);
  }
+
+ h1 {
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  line-height: 135%;
+  opacity: 0.9;
+ }
+
+ * {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  margin-top: 12px;
+  opacity: 0.8;
+ }
+
+ pre,
+ code,
+ span {
+  opacity: 1;
+ }
+`
+
+export const Separetor = styled.div`
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%;
+ height: 5px;
+ border-radius: 10px;
+ background-color: var(--quinary);
+ min-width: 500px;
 `

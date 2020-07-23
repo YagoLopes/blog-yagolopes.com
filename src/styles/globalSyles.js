@@ -38,6 +38,19 @@ font-family: 'Roboto', sans-serif;
 `
 
 export const Container = styled.div`
- width: 100vw;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
  background-color: var(--secondary);
+ overflow-y: scroll;
+ ::-webkit-scrollbar {
+  width: 4px;
+ }
+ ::-webkit-scrollbar-thumb {
+  background-color: var(--tertiary);
+  border-radius: 4px;
+ }
+ ::-webkit-scrollbar-track {
+  background-color: var(--secondary);
+ }
 `
