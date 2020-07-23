@@ -20,6 +20,9 @@ padding: 0;
 border: 0;
 font-family: 'Roboto', sans-serif;
 }
+a {
+  color: var(--link);
+ }
 
 
 :root {

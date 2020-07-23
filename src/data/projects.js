@@ -2,6 +2,13 @@ module.exports = {
  projects: [
   {
    id: 1,
+   name: "Blog",
+   description:
+    "Um blog onde compartilho meus aprendizados / estudos sobre tecnologia  ",
+   url: "http://yagolopes.com/blog",
+  },
+  {
+   id: 1,
    name: "JS Hunt",
    description: "Um aplicativo de consultas de tecnologias / Framworks ",
    url: "https://github.com/YagoLopes/jshunt",
@@ -43,6 +50,6 @@ module.exports = {
  profile: {
   title: "Yago Lopes é Analista de sistemas, e apaixonado pelo que faz!",
   description:
-   "Yago Lopes é formado em Análise e Desenvolvimento de Sistemas. Desenvolvedor Web Fullstack JavaScript com Node.js, e nas horas vagas, autor e redator do blog yagolopes.com",
+   "Yago Lopes é formado em Análise e Desenvolvimento de Sistemas. Desenvolvedor Web Fullstack JavaScript com Node.js, e nas horas vagas, autor e redator do blog ",
  },
 }

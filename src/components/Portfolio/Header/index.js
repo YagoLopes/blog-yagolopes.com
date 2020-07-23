@@ -7,7 +7,10 @@ function Header() {
   <Container>
    <Left>
     <Title>{profile.title}</Title>
-    <Text>{profile.description}</Text>
+    <Text>
+     {profile.description}
+     <a href="http://yagolopes.com/blog">yagolopes.com</a>
+    </Text>
    </Left>
    <Right />
   </Container>
