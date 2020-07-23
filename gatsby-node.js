@@ -19,7 +19,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = ({ graphql, actions }) => {
  const { createPage } = actions
  const templatePost = path.resolve("src/templates/post/index.js")
- const templatePage = path.resolve("src/templates/page/index.js")
  return graphql(`
   {
    allMarkdownRemark {
@@ -39,7 +38,7 @@ exports.createPages = ({ graphql, actions }) => {
   data.allMarkdownRemark.edges.forEach(({ node }) => {
    createPage({
     path: node.fields.slug,
-    component: node.frontmatter.layout === "page" ? templatePage : templatePost,
+    component: templatePost,
     context: {
      slug: node.fields.slug,
     },

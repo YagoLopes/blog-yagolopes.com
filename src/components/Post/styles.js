@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 
 export const Container = styled.div`
  margin-top: 15px;
- width: 90%;
  padding: 5%;
  overflow-y: scroll;
  ::-webkit-scrollbar {

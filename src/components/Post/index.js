@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import { Container, PostRow } from "./styles"
 import { PostContext } from "../../context/PostContext"
 
-function PostList() {
+function Post() {
  const { posts } = useContext(PostContext)
  return (
   <Container>
@@ -15,4 +15,4 @@ function PostList() {
  )
 }
 
-export default PostList
+export default Post

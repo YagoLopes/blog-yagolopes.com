@@ -1,5 +1,5 @@
 import React from "react"
-import GlobalSyles, { Container } from "../styles/portfolioSyles"
+import GlobalSyles, { Container } from "../styles/globalSyles"
 import Header from "../components/Portfolio/Header"
 import { Helmet } from "react-helmet"
 import ListProjects from "../components/Portfolio/ListProjects"

@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Content } from "./styles"
 import { Helmet } from "react-helmet"
-import GlobalSyles from "../../styles/blogSyles"
+import GlobalSyles from "../../styles/globalSyles"
 export default ({ data }) => {
  const post = data.markdownRemark
  const htmlContent = { __html: post.html }
@@ -14,8 +14,8 @@ export default ({ data }) => {
     <title>{post.frontmatter.title}</title>
     <link rel={post.frontmatter.title} href={post.fields.slug} />
    </Helmet>
-   <Content dangerouslySetInnerHTML={htmlContent} />
    <GlobalSyles />
+   <Content dangerouslySetInnerHTML={htmlContent} />
   </>
  )
 }

@@ -1,5 +1,5 @@
 import React from "react"
-import GlobalSyles from "../styles/blogSyles"
+import GlobalSyles, { Container } from "../styles/globalSyles"
 import { Helmet } from "react-helmet"
 import Home from "../components/Home"
 import PostContextProvider from "../context/PostContext"
@@ -18,7 +18,9 @@ export default function({ data }) {
     <link rel="yagolopes.com" href="http://yagolopes.com" />
    </Helmet>
    <PostContextProvider payload={posts}>
-    <Home />
+    <Container>
+     <Home />
+    </Container>
    </PostContextProvider>
   </>
  )
