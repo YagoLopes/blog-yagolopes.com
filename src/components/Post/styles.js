@@ -1,23 +1,7 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-export const Container = styled.div`
- margin-top: 15px;
- padding: 5%;
- overflow-y: scroll;
- ::-webkit-scrollbar {
-  width: 4px;
- }
- ::-webkit-scrollbar-thumb {
-  background-color: var(--tertiary);
-  border-radius: 4px;
- }
- ::-webkit-scrollbar-track {
-  background-color: var(--secondary);
- }
-`
-
-export const PostRow = styled(Link)`
+export const Container = styled(Link)`
  text-decoration: none;
  margin-top: 5px;
  padding: 5px;
