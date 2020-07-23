@@ -9,12 +9,12 @@ export const Container = styled.div`
 `
 
 export const PostList = styled.div`
- margin: 15px 0;
- padding: 5%;
+ margin: 5px 0;
+ padding: 10px;
  overflow-y: scroll;
  min-width: 50%;
  min-height: 40%;
- min-height: 50%;
+ max-height: 50%;
  border-radius: 3px;
  border: 1px solid rgba(0, 0, 0, 0.3);
  background-color: rgba(0, 0, 0, 0.1);
