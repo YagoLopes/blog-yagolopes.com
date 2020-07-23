@@ -23,7 +23,7 @@ module.exports = {
   {
    id: 3,
    name: "Git Compar",
-   description: "Um comparador de repositórios integrado a api do Github",
+   description: "Um comparador de repositórios integrado a API REST do Github",
    url: "https://github.com/YagoLopes/git-compar",
   },
   {
@@ -42,14 +42,15 @@ module.exports = {
   {
    id: 6,
    name: "Easy List",
-   description: "Um app que gerencia sua lista de compras no supermercado",
+   description:
+    "Um aplicativo que gerencia sua lista de compras no supermercado",
    url: "https://github.com/YagoLopes/easylist",
   },
  ],
 
  profile: {
-  title: "Yago Lopes é Analista de sistemas, e apaixonado pelo que faz!",
+  title: "Yago Lopes é analista de sistemas, e apaixonado pelo que faz!",
   description:
-   "Yago Lopes é formado em Análise e Desenvolvimento de Sistemas. Desenvolvedor Web Fullstack JavaScript com Node.js, e nas horas vagas, autor e redator do blog ",
+   "Yago Lopes é formado em Análise e Desenvolvimento de Sistemas. Desenvolvedor web full stack JavaScript com Node JS, e nas horas vagas, autor e redator do blog ",
  },
 }
