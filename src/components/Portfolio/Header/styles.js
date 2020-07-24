@@ -5,6 +5,8 @@ export const Container = styled.div`
  padding: 10%;
  width: 100%;
  display: flex;
+ align-items: center;
+ justify-content: center;
 `
 
 export const Left = styled.div`
@@ -18,16 +20,15 @@ export const Left = styled.div`
 export const Right = styled.div`
  margin-top: -8%;
  margin-left: 50px;
- width: 350px;
- height: 350px;
+ width: 300px;
+ height: 300px;
  background-image: url(${img});
- background-color: var(--quaternary);
- border-radius: 10%;
+ border-radius: 15%;
  background-repeat: no-repeat;
  -moz-box-shadow: inset 10px 10px 50px var(--quaternary);
  -webkit-box-shadow: inset 10px 10px 50px var(--quaternary);
- box-shadow: inset 30px 30px 50px var(--quaternary);
- opacity: 0.2;
+ box-shadow: inset 10px 30px 50px var(--quaternary);
+ opacity: 0.3;
  background-size: cover;
 
  @media only screen and (max-width: 600px) {
