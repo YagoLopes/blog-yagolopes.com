@@ -23,16 +23,23 @@ export const Right = styled.div`
  width: 300px;
  height: 300px;
  background-image: url(${img});
- border-radius: 15%;
+ border-radius: 10px;
  background-repeat: no-repeat;
  -moz-box-shadow: inset 10px 10px 50px var(--quaternary);
  -webkit-box-shadow: inset 10px 10px 50px var(--quaternary);
  box-shadow: inset 10px 30px 50px var(--quaternary);
- opacity: 0.3;
  background-size: cover;
+ opacity: 0.5;
 
  @media only screen and (max-width: 600px) {
   position: absolute;
+ }
+
+ div {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, var(--quaternary), transparent);
+  opacity: 0.8;
  }
 `
 export const Title = styled.h2`

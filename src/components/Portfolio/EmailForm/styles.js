@@ -64,12 +64,17 @@ export const Container = styled.div`
 
   button {
    background-color: var(--link);
+   opacity: 0.8;
    color: var(--white);
    font-weight: 800;
    font-size: 16px;
-
+   cursor: pointer;
    margin: 20px 0 0;
    padding: 10px;
+
+   :hover {
+    opacity: 1;
+   }
   }
  }
 `

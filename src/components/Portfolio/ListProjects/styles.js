@@ -52,6 +52,10 @@ export const Project = styled.div`
   justify-content: center;
   font-size: 14px;
   text-decoration: none;
+  transition: all 0.7s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
   :hover {
    background-color: var(--quinary);
    color: var(--secondary);

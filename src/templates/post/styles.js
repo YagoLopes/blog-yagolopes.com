@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { Container as GlobalContainer } from "../../styles/globalSyles"
 export const Container = styled(GlobalContainer)`
  padding-top: 15px;
+ width: 100%;
 `
 
 export const Content = styled.div`
@@ -9,6 +10,7 @@ export const Content = styled.div`
  margin-right: auto;
  width: 50%;
  min-width: 500px;
+ max-width: 800px;
 
  border-radius: 8px;
  border: 1px solid rgba(0, 0, 0, 0.3);
@@ -48,6 +50,10 @@ export const Content = styled.div`
  code,
  span {
   opacity: 1;
+ }
+
+ img {
+  max-width: 100%;
  }
 `
 
