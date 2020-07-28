@@ -1,27 +1,28 @@
 import styled from "styled-components"
 import { Container as GlobalContainer } from "../../styles/globalSyles"
 export const Container = styled(GlobalContainer)`
- padding-top: 15px;
  width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding: 5% 25%;
+ @media only screen and (max-width: 600px) {
+  padding: 20px 25px;
+ }
 `
-
-export const Content = styled.div`
- margin-left: auto;
- margin-right: auto;
- width: 50%;
- min-width: 500px;
- max-width: 800px;
-
+export const Card = styled.div`
  border-radius: 8px;
  border: 1px solid rgba(0, 0, 0, 0.3);
  background-color: rgba(0, 0, 0, 0.1);
-
  color: var(--white);
+ max-width: 100%;
+`
 
+export const Content = styled.div`
  margin-bottom: 12px;
  padding: 24px;
  padding-top: 22px;
- position: relative;
 
  a {
   color: var(--link);
@@ -53,16 +54,13 @@ export const Content = styled.div`
  }
 
  img {
-  max-width: 100%;
+  max-width: 200px;
  }
 `
 
 export const Separetor = styled.div`
- margin-left: auto;
- margin-right: auto;
- width: 50%;
+ width: 100%;
  height: 5px;
- border-radius: 10px;
+ border-radius: 4px 4px 0 0;
  background-color: var(--quinary);
- min-width: 500px;
 `
