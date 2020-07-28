@@ -12,9 +12,7 @@ function Header() {
      <a href="http://yagolopes.com/blog">yagolopes.com</a>
     </Text>
    </Left>
-   <Right>
-    <div />
-   </Right>
+   <Right />
   </Container>
  )
 }

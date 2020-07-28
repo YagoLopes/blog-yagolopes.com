@@ -18,28 +18,22 @@ export const Left = styled.div`
  }
 `
 export const Right = styled.div`
- margin-top: -8%;
  margin-left: 50px;
  width: 300px;
+ max-width: 100%;
  height: 300px;
  background-image: url(${img});
+ background-color: var(--quaternary);
  border-radius: 10px;
  background-repeat: no-repeat;
  -moz-box-shadow: inset 10px 10px 50px var(--quaternary);
  -webkit-box-shadow: inset 10px 10px 50px var(--quaternary);
  box-shadow: inset 10px 30px 50px var(--quaternary);
  background-size: cover;
- opacity: 0.5;
+ opacity: 0.2;
 
  @media only screen and (max-width: 600px) {
   position: absolute;
- }
-
- div {
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to right, var(--quaternary), transparent);
-  opacity: 0.8;
  }
 `
 export const Title = styled.h2`
