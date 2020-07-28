@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, PostList } from "./styles"
+import { Container, PostList, Separetor } from "./styles"
 import Post from "../../components/Post"
 
 const Home = () => {
