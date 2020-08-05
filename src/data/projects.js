@@ -2,15 +2,28 @@ module.exports = {
  projects: [
   {
    id: 1,
-   name: "Blog",
+   name: "CSV2JSON",
+   description: "Um conversor simples de JSON para CSV",
+   url: "https://yagolopes.github.io/json2csv/",
+  },
+
+  {
+   id: 3,
+   name: "Git Compar",
+   description: "Um comparador de repositórios integrado a API REST do Github",
+   url: "https://yagolopes.github.io/git-compar/",
+  },
+  {
+   id: 6,
+   name: "Easy List",
    description:
-    "Um blog onde compartilho meus aprendizados / estudos sobre tecnologia  ",
-   url: "http://yagolopes.com/blog",
+    "Um aplicativo que gerencia sua lista de compras no supermercado",
+   url: "https://github.com/YagoLopes/easylist",
   },
   {
    id: 1,
    name: "JS Hunt",
-   description: "Um aplicativo de consultas de tecnologias / Framworks ",
+   description: "Um aplicativo de consulta de tecnologias / Framworks",
    url: "https://github.com/YagoLopes/jshunt",
   },
   {
@@ -20,12 +33,7 @@ module.exports = {
     "Um Tinder para desenvolvedores criado na semana omnistack 8.0 da Rocketseat",
    url: "https://github.com/YagoLopes/tindev",
   },
-  {
-   id: 3,
-   name: "Git Compar",
-   description: "Um comparador de repositórios integrado a API REST do Github",
-   url: "https://github.com/YagoLopes/git-compar",
-  },
+
   {
    id: 4,
    name: "Clone Twitter",
@@ -38,13 +46,6 @@ module.exports = {
    description:
     "Um clone do Instagram criado na semana omnistack da Rocketseat",
    url: "https://github.com/YagoLopes/instarocket",
-  },
-  {
-   id: 6,
-   name: "Easy List",
-   description:
-    "Um aplicativo que gerencia sua lista de compras no supermercado",
-   url: "https://github.com/YagoLopes/easylist",
   },
  ],
 
