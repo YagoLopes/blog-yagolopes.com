@@ -3,7 +3,7 @@ module.exports = {
   {
    id: 1,
    name: "CSV2JSON",
-   description: "Um conversor simples de JSON para CSV",
+   description: "Um conversor simples de JSON para CSV.",
    url: "https://yagolopes.github.io/json2csv/",
   },
 
