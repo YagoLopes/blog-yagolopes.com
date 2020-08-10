@@ -1,7 +1,7 @@
 {
  "name": "blog-yagolopescom",
  "private": true,
- "description": "",
+ "description": "A technology blog, developed with gatsbyjs",
  "version": "0.1.0",
  "author": "Yago Lopes",
  "scripts": {
@@ -26,7 +26,6 @@
   "gatsby-source-filesystem": "^2.1.48",
   "gatsby-transformer-rehype": "^1.4.1",
   "gatsby-transformer-remark": "^2.8.14",
-  "gh-pages": "^2.2.0",
   "prism-themes": "^1.4.0",
   "prismjs": "^1.20.0",
   "react": "^16.12.0",
@@ -36,7 +35,8 @@
   "styled-components": "^5.0.1"
  },
  "devDependencies": {
-  "prettier": "^1.19.1"
+  "prettier": "^1.19.1",
+  "gh-pages": "^2.2.0"
  },
  "keywords": [],
  "homepage": "https://yagolopes.github.io/blog-yagolopes.com"
