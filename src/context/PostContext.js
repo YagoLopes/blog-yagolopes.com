@@ -24,8 +24,10 @@ PostContextProvider.propTypes = {
    title: PropTypes.string,
    header: PropTypes.string,
    date: PropTypes.string,
+   author: PropTypes.string,
    description: PropTypes.string,
    thumbnail: PropTypes.string,
+   tags: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
  }),
 }

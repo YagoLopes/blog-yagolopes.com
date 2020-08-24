@@ -5,7 +5,7 @@ header: Array no Java Script
 date: 2020-02-22 15:30
 category: js
 author: Yago Lopes Lázaro
-tags: [Java Script, Array, Manipulando]
+tags: [programação, javascript, array]
 description: Um array a grosso modo pode ser entendido como uma lista de "elementos", no Java Script um array é simbolizado pelos caracteres de chaves `[]` onde cada elemento é posicionado dentro das chaves e separados por vírgula `,`
 thumbnail: "https://img.icons8.com/color/48/000000/javascript.png"
 ---

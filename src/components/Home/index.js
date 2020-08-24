@@ -1,13 +1,11 @@
 import React from "react"
-import { Container, PostList } from "./styles"
-import Post from "../../components/Post"
+import { Container } from "./styles"
+import Posts from "../../components/Posts"
 
 const Home = () => {
  return (
   <Container>
-   <PostList>
-    <Post />
-   </PostList>
+   <Posts />
   </Container>
  )
 }
