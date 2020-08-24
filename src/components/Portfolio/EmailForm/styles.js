@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Container = styled.div`
  width: 100%;
- padding: 0 25px 10% 25px;
+ height: 560px;
  display: flex;
  align-items: center;
  justify-content: center;
@@ -10,16 +10,16 @@ export const Container = styled.div`
  form {
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
-  border: solid 1px var(--link);
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 40px;
   width: 400px;
   display: flex;
+  border-radius: 4px;
   flex-direction: column;
   align-items: stretch;
   h1 {
    font-size: 26px;
-   font-weight: 500;
+   font-weight: bold;
    text-align: center;
    margin: 0 0 10px;
    color: var(--tertiary);
@@ -67,7 +67,7 @@ export const Container = styled.div`
    color: var(--white);
    font-weight: 800;
    font-size: 16px;
-
+   border-radius: 4px;
    margin: 20px 0 0;
    padding: 10px;
   }

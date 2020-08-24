@@ -2,7 +2,7 @@ import styled from "styled-components"
 import img from "../../../assets/profile.jpg"
 
 export const Container = styled.div`
- padding: 10%;
+ padding: 10% 10% 45px 10%;
  width: 100%;
  display: flex;
  align-items: center;
@@ -11,6 +11,7 @@ export const Container = styled.div`
 
 export const Left = styled.div`
  max-width: 50%;
+ margin-top: -100px;
 
  @media only screen and (max-width: 600px) {
   margin-top: 20px;
@@ -36,7 +37,7 @@ export const Right = styled.div`
  }
 `
 export const Title = styled.h2`
- font-size: 1.8em;
+ font-size: 2em;
  color: var(--quinary);
 `
 export const Text = styled.p`

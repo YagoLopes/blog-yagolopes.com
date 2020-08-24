@@ -1,24 +1,21 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
- width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ width: 70%;
  display: flex;
- padding: 0 10% 10px 10%;
- justify-content: space-around;
  flex-wrap: wrap;
+ justify-content: center;
 `
 
 export const Project = styled.div`
- display: flex;
- flex-direction: column;
  border: solid 1px var(--primary);
  border-radius: 4px;
- margin-bottom: 50px;
  padding: 10px;
- min-width: 100px;
- max-width: 250px;
- min-height: 150px;
- flex-grow: 2;
+ min-width: 200px;
+ max-width: 280px;
+ margin: 10px;
  header {
   font-size: 16px;
   text-align: center;
