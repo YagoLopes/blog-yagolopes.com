@@ -20,10 +20,10 @@ export default class EmailForm extends React.Component {
      method="POST"
     >
      <h1>Me envie um e-mail</h1>
-     <label>Seu melhor e-mail:</label>
-     <input type="email" name="email" />
-     <label>Mensagem:</label>
-     <textarea type="text" name="message" rows="7" />
+     <label htmlFor="email">Seu melhor e-mail:</label>
+     <input type="email" name="email" id="email" />
+     <label htmlFor="message">Mensagem:</label>
+     <textarea type="text" name="message" rows="7" id="message" />
      {status === "SUCCESS" ? <span>Obrigado!</span> : <button>Enviar</button>}
      {status === "ERROR" && <p>Ooops! Alguma coisa deu errado.</p>}
     </form>

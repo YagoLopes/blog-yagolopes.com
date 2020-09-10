@@ -1,29 +1,25 @@
 import React, { useContext } from "react"
-import { Container, Wrapper } from "./styles"
 import { PostContext } from "../../context/PostContext"
 import { format } from "date-fns"
-import { eoLocale } from "date-fns/locale/eo"
+import { Link } from "gatsby"
+import { Wrapper } from "./styles"
 
 function Posts() {
  const { posts } = useContext(PostContext)
- return (
-  <Container>
-   {posts.map(({ node }) => (
-    <Wrapper to={node.fields.slug} key={node.fields.slug}>
-     <h1>{node.frontmatter.title}</h1>
-     <p>
-      Por <b>{node.frontmatter.author}</b> em{" "}
-      {format(new Date(node.frontmatter.date), "MMMM yyyy", {
-       locale: eoLocale,
-      })}
-     </p>
-     {node.frontmatter.tags?.map(tag => (
-      <a>#{tag}</a>
-     ))}
-    </Wrapper>
-   ))}
-  </Container>
- )
+ return posts.map(({ node }) => (
+  <Wrapper key={node.fields.slug}>
+   <Link to={node.fields.slug}>
+    <h1>{node.frontmatter.title}</h1>
+    <p>
+     Por <b>{node.frontmatter.author}</b> em{" "}
+     {format(new Date(node.frontmatter.date), "MMMM yyyy")}
+    </p>
+    {node.frontmatter.tags?.map(tag => (
+     <a href="##">#{tag}</a>
+    ))}
+   </Link>
+  </Wrapper>
+ ))
 }
 
 export default Posts
