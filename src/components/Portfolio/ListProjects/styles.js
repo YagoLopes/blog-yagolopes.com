@@ -1,8 +1,21 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
- margin-left: auto;
- margin-right: auto;
+ padding: 10% 10px;
+ margin: 25px auto auto;
+ background-color: rgba(0, 0, 0, 0.1);
+
+ h1 {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--tertiary);
+ }
+`
+
+export const Wrapper = styled.div`
+ margin: 0 auto;
+ padding: 17px 20px;
  width: 70%;
  display: flex;
  flex-wrap: wrap;
