@@ -15,7 +15,7 @@ function Posts() {
      {format(new Date(node.frontmatter.date), "MMMM yyyy")}
     </p>
     {node.frontmatter.tags?.map(tag => (
-     <a href="##">#{tag}</a>
+     <strong>#{tag}</strong>
     ))}
    </Link>
   </Wrapper>

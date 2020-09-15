@@ -38,6 +38,15 @@ a {
     --white: #fcfcf2;
     --link: #00638a;
   }
+
+img{
+  max-width: 100%;
+}
+
+pre{
+  max-width: 100%;
+}
+
 `
 
 export const Container = styled.div`
@@ -45,15 +54,15 @@ export const Container = styled.div`
  display: flex;
  flex-direction: column;
  background-color: var(--secondary);
- /* overflow-y: scroll; */
- /* ::-webkit-scrollbar {
+ overflow-y: scroll;
+ ::-webkit-scrollbar {
   width: 4px;
- }*/
- /* ::-webkit-scrollbar-thumb {
+ }
+ ::-webkit-scrollbar-thumb {
   background-color: var(--tertiary);
   border-radius: 4px;
- } */
- /* ::-webkit-scrollbar-track {
+ }
+ ::-webkit-scrollbar-track {
   background-color: var(--secondary);
- } */
+ }
 `
