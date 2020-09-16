@@ -39,13 +39,7 @@ a {
     --link: #00638a;
   }
 
-img{
-  max-width: 100%;
-}
 
-pre{
-  max-width: 100%;
-}
 
 `
 

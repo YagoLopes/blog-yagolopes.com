@@ -37,11 +37,8 @@ export const query = graphql`
      frontmatter {
       layout
       title
-      header
       date
       author
-      description
-      thumbnail
       tags
      }
     }

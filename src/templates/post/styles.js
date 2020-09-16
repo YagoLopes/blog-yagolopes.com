@@ -21,6 +21,18 @@ export const Content = styled.div`
  padding-top: 22px;
  position: relative;
 
+ img {
+  max-width: 100%;
+ }
+
+ pre {
+  max-width: 100% !important;
+
+  code {
+   max-width: 100% !important;
+  }
+ }
+
  a {
   color: var(--link);
  }
@@ -36,7 +48,7 @@ export const Content = styled.div`
 
  * {
   font-family: Roboto, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.2px;
   line-height: 20px;

@@ -1,13 +1,9 @@
 ---
 layout: post
 title: CSS 3
-header: Posicionando com CSS3
 date: 2020-05-27 22:42
-category: css
 author: Yago Lopes Lázaro
 tags: [css, styles, positions]
-description: "Se você é um desenvolvedor web, com certeza já sofreu para posicionar os elementos html em tela utilizando css, existem inúmeras técnicas que podem ser utilizadas para posicionar as tags html. Nesse post vou abordar as principais que estou utilizando atualmente."
-thumbnail: "https://img.icons8.com/color/48/000000/css3.png"
 ---
 
 # Posicionando com CSS3
