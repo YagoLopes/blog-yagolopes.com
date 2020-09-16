@@ -1,11 +1,13 @@
 import React from "react"
-import { Container } from "./styles"
+import { Container, Wrapper } from "./styles"
 import Posts from "../../components/Posts"
 
 const Home = () => {
  return (
   <Container>
-   <Posts />
+   <Wrapper>
+    <Posts />
+   </Wrapper>
   </Container>
  )
 }
