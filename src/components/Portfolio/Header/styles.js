@@ -40,6 +40,9 @@ export const Title = styled.h2`
  font-size: 2em;
  margin-top: 20px;
  color: var(--quinary);
+ @media only screen and (max-width: 600px) {
+  margin-top: 220px;
+ }
 `
 export const Text = styled.p`
  font-size: 1.2em;

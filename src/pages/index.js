@@ -11,7 +11,7 @@ export default function() {
    <GlobalSyles />
    <Helmet>
     <meta charSet="utf-8" />
-    <title>yagolopes.com</title>
+    <title>yagolopes.com | Profile</title>
     <link rel="yagolopes.com" href="http://yagolopes.com" />
    </Helmet>
    <Container>

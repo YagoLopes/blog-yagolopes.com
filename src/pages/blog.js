@@ -14,7 +14,7 @@ export default function({ data }) {
    <GlobalSyles />
    <Helmet>
     <meta charSet="utf-8" />
-    <title>yagolopes.com</title>
+    <title>yagolopes.com | Blog</title>
     <link rel="yagolopes.com" href="http://yagolopes.com" />
    </Helmet>
    <PostContextProvider payload={posts}>
