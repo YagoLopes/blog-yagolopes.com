@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Content, Separetor } from "./styles"
+import { Content } from "./styles"
 import { Helmet } from "react-helmet"
 import GlobalSyles from "../../styles/globalSyles"
 import { Container } from "./styles"
@@ -18,8 +18,11 @@ export default ({ data }) => {
    </Helmet>
    <GlobalSyles />
    <Container>
-    <Separetor />
+    <br />
+    <br />
     <Content dangerouslySetInnerHTML={htmlContent} />
+    <br />
+    <br />
    </Container>
   </React.Fragment>
  )
